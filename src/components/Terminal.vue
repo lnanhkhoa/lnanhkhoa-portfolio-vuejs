@@ -4,46 +4,97 @@
       <div class="icon-btn close"></div>
       <div class="icon-btn min"></div>
       <div class="icon-btn max"></div>
-      <div class="terminal-bar-text is-hidden-mobile dark-mode-text">guest@joey.dev: ~</div>
+      <div class="terminal-bar-text is-hidden-mobile dark-mode-text">guest@lnanhkhoa.com: ~</div>
     </div>
-    <div
-      class="terminal-window primary-bg"
-      onclick="document.getElementById('dummyKeyboard').focus();"
-    >
-      <div class="terminal-output" id="terminalOutput">
-        <div class="terminal-line">
-          <span class="help-msg">
-            Welcome to joey.dev — Type
-            <span class="code">help</span>
-            for a list of supported commands.
-          </span>
-        </div>
-      </div>
+    <div class="terminal-window primary-bg" v-on:click="focusInput">
+      <TerminalOutput v-bind:outputs="terminalOutputs" />
       <div class="terminal-line">
-        <span class="success">➜</span>
-        <span class="directory">~</span>
-        <span class="user-input" id="userInput"></span>
-        <input type="text" id="dummyKeyboard" class="dummy-keyboard" />
+        <span class="success">{{"➜ "}}</span>
+        <span class="directory">{{"~ "}}</span>
+        <span class="user-input" v-text="userInput"></span>
+        <input ref="input" type="text" id="dummyKeyboard" class="dummy-keyboard" v-on:keyup="keyup" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import TerminalOutput from "../components/TerminalOutput";
 export default {
   name: "Terminal",
-  props: {
-    msg: String
+  props: {},
+  components: { TerminalOutput },
+  data() {
+    return {
+      BLACKLISTED_KEY_CODES: [38],
+      userInput: "",
+      terminalOutputs: [
+        "Welcome to lnanhkhoa.com — Type <span class='code'>help</span> for a list of supported commands."
+      ],
+      COMMANDS: {
+        help:
+          'Supported commands: <span class="code">about</span>, <span class="code">experience</span>, <span class="code">education</span>, <span class="code">skills</span>, <span class="code">corgi</span>',
+        about:
+          "Hiya 👋 <br>I'm a rising senior at UCF with a passion for wanting to help others. I am interested in full-stack/backend engineering and infrastructure.",
+        skills:
+          '<span class="code">Languages:</span> JavaScript, TypeScript, PHP, Java, Go, C',
+        education:
+          '<strong class="header-name">University of Central Florida</strong><br>B.S. Information Technology — Emphasis in Software Engineering',
+        resume:
+          "<a href='./joey_colon_resume.pdf' class='success link'>resume.pdf</a>",
+        experience:
+          '<strong class="header-name">Uber (May 2020 - Aug. 2020)</strong><br><i>Software Engineering Intern</i><br><strong class="header-name">Honey (Jan. 2020 - April 2020)</strong><br><i>Software Engineering Intern</i><br> <strong class="header-name">LSQ (Jan. 2019 - April 2019)</strong> <br><i>Software Engineering Intern</i>',
+        corgi:
+          "My top 3 favorite corgis (click to view):<br><a href='https://www.instagram.com/bearorcorgi/' class='success link'>Bear</a>, <a href='https://www.instagram.com/lychee_the_corgi/' class='success link'>Mochee</a>, <a href='https://www.instagram.com/thecorgijack/' class='success link'>Jack</a>"
+      }
+    };
+  },
+  methods: {
+    focusInput: function() {
+      this.$refs.input.focus();
+    },
+    execute: function(input) {
+      input = input.toLowerCase();
+      this.terminalOutputs.push("➜ ~ " + input);
+      if (input.replace(" ", "") === "") return;
+      if (input.replace(" ", "") === "clear") {
+        this.terminalOutputs = [];
+        return;
+      }
+
+      const output = (() => {
+        if (!Object.prototype.hasOwnProperty.call(this.COMMANDS, input)) {
+          return `No such command: ${input}`;
+        } else {
+          return this.COMMANDS[input];
+        }
+      })();
+
+      this.terminalOutputs.push(output);
+    },
+
+    keyup: function(e) {
+      if (this.BLACKLISTED_KEY_CODES.includes(e.which)) {
+        return;
+      }
+      if (e.which === 8 || e.which === 46) {
+        this.userInput = this.userInput.slice(0, this.userInput.length - 1);
+        return;
+      }
+
+      if (e.key === "Enter") {
+        this.execute(this.userInput);
+        this.userInput = "";
+        return;
+      }
+
+      if (e.key.length > 1) return null;
+
+      this.userInput = this.userInput + e.key;
+    }
   }
 };
 </script>
-
-
-
-
-
-
-
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="stylus">
