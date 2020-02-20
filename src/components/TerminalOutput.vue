@@ -36,4 +36,12 @@ export default {
 .code, .error, .fa-heart {
   color: #d7566a;
 }
+.success {
+  color: #8dd39e;
+}
+
+.directory {
+  color: #75e1e7;
+  font-weight: 500;
+}
 </style>

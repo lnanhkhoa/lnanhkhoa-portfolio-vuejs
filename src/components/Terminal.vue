@@ -4,13 +4,13 @@
       <div class="icon-btn close"></div>
       <div class="icon-btn min"></div>
       <div class="icon-btn max"></div>
-      <div class="terminal-bar-text is-hidden-mobile dark-mode-text">guest@lnanhkhoa.com: ~</div>
+      <div class="terminal-bar-text is-hidden-mobile dark-mode-text">--~-- guest@lnanhkhoa --~--</div>
     </div>
     <div class="terminal-window primary-bg" v-on:click="focusInput">
-      <TerminalOutput v-bind:outputs="terminalOutputs" />
+      <terminal-output v-bind:outputs="terminalOutputs" />
       <div class="terminal-line">
-        <span class="success">{{"➜ "}}</span>
-        <span class="directory">{{"~ "}}</span>
+        <span class="success">{{ "➜ " }}</span>
+        <span class="directory">{{ "~ " }}</span>
         <span class="user-input" v-text="userInput"></span>
         <input ref="input" type="text" id="dummyKeyboard" class="dummy-keyboard" v-on:keyup="keyup" />
       </div>
@@ -19,54 +19,55 @@
 </template>
 
 <script>
+import _ from "lodash";
 import TerminalOutput from "../components/TerminalOutput";
+
 export default {
   name: "Terminal",
-  props: {},
-  components: { TerminalOutput },
+  components: {
+    TerminalOutput
+  },
+  props: {
+    commands: {
+      type: Array,
+      default: () => {
+        return [];
+      }
+    },
+    initialOutput: {
+      type: String,
+      default: ""
+    }
+  },
   data() {
     return {
-      BLACKLISTED_KEY_CODES: [38],
+      blacklistedKeyCodes: [38],
       userInput: "",
-      terminalOutputs: [
-        "Welcome to lnanhkhoa.com — Type <span class='code'>help</span> for a list of supported commands."
-      ],
-      COMMANDS: {
-        help:
-          'Supported commands: <span class="code">about</span>, <span class="code">experience</span>, <span class="code">education</span>, <span class="code">skills</span>, <span class="code">corgi</span>',
-        about:
-          "Hiya 👋 <br>I'm a rising senior at UCF with a passion for wanting to help others. I am interested in full-stack/backend engineering and infrastructure.",
-        skills:
-          '<span class="code">Languages:</span> JavaScript, TypeScript, PHP, Java, Go, C',
-        education:
-          '<strong class="header-name">University of Central Florida</strong><br>B.S. Information Technology — Emphasis in Software Engineering',
-        resume:
-          "<a href='./joey_colon_resume.pdf' class='success link'>resume.pdf</a>",
-        experience:
-          '<strong class="header-name">Uber (May 2020 - Aug. 2020)</strong><br><i>Software Engineering Intern</i><br><strong class="header-name">Honey (Jan. 2020 - April 2020)</strong><br><i>Software Engineering Intern</i><br> <strong class="header-name">LSQ (Jan. 2019 - April 2019)</strong> <br><i>Software Engineering Intern</i>',
-        corgi:
-          "My top 3 favorite corgis (click to view):<br><a href='https://www.instagram.com/bearorcorgi/' class='success link'>Bear</a>, <a href='https://www.instagram.com/lychee_the_corgi/' class='success link'>Mochee</a>, <a href='https://www.instagram.com/thecorgijack/' class='success link'>Jack</a>"
-      }
+      terminalOutputs: [this.initialOutput]
     };
   },
   methods: {
     focusInput: function() {
       this.$refs.input.focus();
     },
-    execute: function(input) {
-      input = input.toLowerCase();
-      this.terminalOutputs.push("➜ ~ " + input);
-      if (input.replace(" ", "") === "") return;
-      if (input.replace(" ", "") === "clear") {
+    execute: function(inputText) {
+      const input = inputText.toLowerCase();
+      this.terminalOutputs.push(
+        `<span class="success">➜  </span>
+        <span class="directory">~ </span>` + input
+      );
+
+      if (input === "") return;
+      if (input === "clear") {
         this.terminalOutputs = [];
         return;
       }
 
       const output = (() => {
-        if (!Object.prototype.hasOwnProperty.call(this.COMMANDS, input)) {
+        if (!_.includes(_.keys(this.commands), input)) {
           return `No such command: ${input}`;
         } else {
-          return this.COMMANDS[input];
+          return this.commands[input];
         }
       })();
 
@@ -74,11 +75,12 @@ export default {
     },
 
     keyup: function(e) {
-      if (this.BLACKLISTED_KEY_CODES.includes(e.which)) {
+      if (this.blacklistedKeyCodes.includes(e.which)) {
         return;
       }
+
       if (e.which === 8 || e.which === 46) {
-        this.userInput = this.userInput.slice(0, this.userInput.length - 1);
+        this.userInput = this.userInput.slice(0, -1);
         return;
       }
 
