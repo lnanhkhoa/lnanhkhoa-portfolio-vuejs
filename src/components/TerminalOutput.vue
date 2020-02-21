@@ -1,5 +1,5 @@
 <template>
-  <div class="terminal-output">
+  <div class="terminal-output" ref="terminalOutput">
     <div v-bind:key="index" v-for="(output, index) in outputs">
       <div class="terminal-line">
         <span v-html="output"></span>
@@ -15,6 +15,9 @@ export default {
     outputs: {
       type: Array
     }
+  },
+  beforeUpdate() {
+    this.$refs.terminalOutput.scrollTop = this.$refs.terminalOutput.scrollHeight;
   }
 };
 </script>
@@ -36,6 +39,7 @@ export default {
 .code, .error, .fa-heart {
   color: #d7566a;
 }
+
 .success {
   color: #8dd39e;
 }

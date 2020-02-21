@@ -7,7 +7,7 @@
             <div class="col-lg-12">
               <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand">
-                  <img src="assets/images/logo.png" alt="Logo" />
+                  <img src="../assets/logo.svg" alt="Logo" />
                 </a>
                 <button
                   class="navbar-toggler"
@@ -134,4 +134,4 @@
 <style src="../library/unfold-free-lite/assets/css/magnific-popup.css"></style>
 <style src="../library/unfold-free-lite/assets/css/slick.css"></style>
 <style src="../library/unfold-free-lite/assets/css/default.css"></style>
-<style src="../library/unfold-free-lite/assets/css/style.css"></style>
+<style src="./Home.css"></style>

@@ -8,8 +8,8 @@
           <div class="row">
             <div class="col-lg-12">
               <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="index.html">
-                  <img src="../library/unfold-free-lite/assets/images/logo.png" alt="Logo" />
+                <a class="navbar-brand" href="/">
+                  <img src="../assets/logo.svg" alt="Logo" />
                 </a>
                 <!-- Logo -->
                 <button
@@ -29,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                      <a class="page-scroll" href="#">Home</a>
+                      <a class="page-scroll" href>Home</a>
                     </li>
                     <li class="nav-item">
                       <a class="page-scroll" href="#about">About</a>
@@ -78,16 +78,8 @@
           <img src="../library/unfold-free-lite/assets/images/banner/shape/shape-4.png" alt="Shape" />
         </div>
         <!-- header shape -->
-        <div class="header-shape shape-seven layer" data-depth="0.50">
-          <img src="../library/unfold-free-lite/assets/images/banner/shape/shape-5.png" alt="Shape" />
-        </div>
-        <!-- header shape -->
         <div class="header-shape shape-eight layer" data-depth="0.40">
           <img src="../library/unfold-free-lite/assets/images/banner/shape/shape-3.png" alt="Shape" />
-        </div>
-        <!-- header shape -->
-        <div class="header-shape shape-nine layer" data-depth="0.20">
-          <img src="../library/unfold-free-lite/assets/images/banner/shape/shape-6.png" alt="Shape" />
         </div>
         <!-- header shape -->
         <div class="header-shape shape-ten layer" data-depth="0.30">
@@ -99,15 +91,15 @@
             <div class="col-xl-5 col-lg-6">
               <div class="header-content-right">
                 <h4 class="sub-title">Hello, I’m</h4>
-                <h1 class="title">Mark Parker</h1>
-                <p>A Freelance UI Designer & Web Developer</p>
-                <a class="main-btn" href="#work">View my Work</a>
+                <h1 class="title">Le Nguyen Anh Khoa</h1>
+                <p class="role">A Backend Developer</p>
+                <a class="main-btn" href="#about">About Me</a>
               </div>
               <!-- header content right -->
             </div>
             <div class="col-lg-6 offset-xl-1">
               <div class="header-image d-none d-lg-block">
-                <img src="../library/unfold-free-lite/assets/images/banner/hero.png" alt="hero" />
+                <img src="../assets/myAvatar.png" alt="hero" />
               </div>
               <!-- header image -->
             </div>
@@ -122,22 +114,17 @@
                 <div class="header-social-icon">
                   <ul>
                     <li>
-                      <a href="#">
-                        <i class="lni-facebook-filled"></i>
+                      <a href="https://www.github.com/lnanhkhoa/">
+                        <i class="lni-github-original"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i class="lni-twitter-original"></i>
+                      <a href="https://www.linkedin.com/in/lnanhkhoa/">
+                        <i class="lni-facebook-original"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i class="lni-behance-original"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
+                      <a href="https://www.linkedin.com/in/lnanhkhoa/">
                         <i class="lni-linkedin-original"></i>
                       </a>
                     </li>
@@ -154,6 +141,20 @@
       </div>
       <!-- header content -->
     </header>
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== ABOUT PART START ======-->
+
+    <div id="terminal" class="row justify-content-center pt-125 pb-130">
+      <div class="col-lg-10 col-md-10 col-sm-10 pl-30 pr-30">
+        <div class="section-title text-center">
+          <h2 class="title">Love Terminal</h2>
+        </div>
+        <!-- section title -->
+        <terminal v-bind:commands="COMMANDS" v-bind:initialOutput="INITIAL_OUTPUT" />
+      </div>
+    </div>
 
     <!--====== HEADER PART ENDS ======-->
 
@@ -184,7 +185,7 @@
                     </div>
                     <div class="info-text">
                       <p>
-                        <span>Date of birth:</span> 8 June 1995
+                        <span>Date of birth:</span> April 4, 1994
                       </p>
                     </div>
                   </div>
@@ -197,7 +198,7 @@
                     </div>
                     <div class="info-text">
                       <p>
-                        <span>Email:</span> parker@mysite.com
+                        <span>Email:</span> lnanhkhoa303@gmail.com
                       </p>
                     </div>
                   </div>
@@ -210,7 +211,7 @@
                     </div>
                     <div class="info-text">
                       <p>
-                        <span>Phone:</span> +1-202-555-0138
+                        <span>Phone:</span> +84-39-996-4550
                       </p>
                     </div>
                   </div>
@@ -223,7 +224,7 @@
                     </div>
                     <div class="info-text">
                       <p>
-                        <span>Location:</span> 4373, El Centro, CA
+                        <span>Location:</span> Ho Chi Minh City, VN
                       </p>
                     </div>
                   </div>
@@ -241,7 +242,7 @@
                 </div>
                 <div class="skill-bar">
                   <div class="bar-inner">
-                    <div class="bar progress-line" data-width="80"></div>
+                    <div class="bar progress-line" data-width="80" v-bind:style="{width: '80%'}"></div>
                   </div>
                 </div>
               </div>
@@ -252,7 +253,7 @@
                 </div>
                 <div class="skill-bar">
                   <div class="bar-inner">
-                    <div class="bar progress-line" data-width="60"></div>
+                    <div class="bar progress-line" data-width="60" v-bind:style="{width: '60%'}"></div>
                   </div>
                 </div>
               </div>
@@ -487,4 +488,4 @@
 <style src="../library/unfold-free-lite/assets/css/LineIcons.css"></style>
 <style src="../library/unfold-free-lite/assets/css/magnific-popup.css"></style>
 <style src="../library/unfold-free-lite/assets/css/default.css"></style>
-<style src="../library/unfold-free-lite/assets/css/style.css"></style>
+<style src="./Home.css"></style>

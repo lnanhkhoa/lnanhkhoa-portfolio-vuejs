@@ -7,10 +7,12 @@
       <div class="terminal-bar-text is-hidden-mobile dark-mode-text">--~-- guest@lnanhkhoa --~--</div>
     </div>
     <div class="terminal-window primary-bg" v-on:click="focusInput">
-      <terminal-output v-bind:outputs="terminalOutputs" />
+      <terminal-output v-bind:outputs="terminalOutputs"/>
       <div class="terminal-line">
-        <span class="success">{{ "➜ " }}</span>
-        <span class="directory">{{ "~ " }}</span>
+        <span class="success">➜</span>
+        {{" "}}
+        <span class="directory">~</span>
+        {{" "}}
         <span class="user-input" v-text="userInput"></span>
         <input ref="input" type="text" id="dummyKeyboard" class="dummy-keyboard" v-on:keyup="keyup" />
       </div>
@@ -43,7 +45,8 @@ export default {
     return {
       blacklistedKeyCodes: [38],
       userInput: "",
-      terminalOutputs: [this.initialOutput]
+      terminalOutputs: [this.initialOutput],
+      arrow: "➜  "
     };
   },
   methods: {
@@ -53,8 +56,8 @@ export default {
     execute: function(inputText) {
       const input = inputText.toLowerCase();
       this.terminalOutputs.push(
-        `<span class="success">➜  </span>
-        <span class="directory">~ </span>` + input
+        `<span class="success">➜</span>  
+        <span class="directory">~ </span> ` + input
       );
 
       if (input === "") return;
@@ -173,7 +176,7 @@ p {
 .terminal-window {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  height: 254px;
+  height: 400px;
   padding: 0.5rem 0rem 0rem 0.5rem;
   display: flex;
   flex-direction: column;
