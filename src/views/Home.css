@@ -165,9 +165,13 @@ p {
   font-size: 45px;
   color: #000;
   padding-bottom: 20px; }
+
   @media (max-width: 767px) {
     .section-title .title {
       font-size: 30px; } }
+
+
+
 
 /*===== All Preloader Style =====*/
 .preloader {
@@ -1775,7 +1779,7 @@ p.form-message.success, p.form-message.error {
       .terminal-title {
         font-size: 24px; 
       } 
-
 }
+
 
 /*# sourceMappingURL=style.css.map */

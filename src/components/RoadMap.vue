@@ -3,8 +3,7 @@
     <div class="row justify-content-center">
       <div class="col-lg-6">
         <div class="section_title text-center pb-30">
-          <h5 class="sub_title">Experience</h5>
-          <h3 class="main_title">Work Experience</h3>
+          <h2 class="title">Work Experience</h2>
           <ul class="line">
             <li></li>
             <li></li>
@@ -22,9 +21,9 @@
             data-wow-delay="0.2s"
           >
             <div class="experience_title order-last">
-              <h3 class="title">Graphic Designer</h3>
-              <p>PageBulb</p>
-              <span class="date">March 2019- August 2024</span>
+              <h3 class="title">Backend Developer</h3>
+              <p>Biti's</p>
+              <span class="date">November 2018 - March 2020</span>
             </div>
             <div class="experience_number">
               <span>01</span>
@@ -50,9 +49,9 @@
             data-wow-delay="0.5s"
           >
             <div class="experience_title text-lg-right">
-              <h3 class="title">UI/UX Designer</h3>
-              <p>UIdeck</p>
-              <span class="date">March 2019- August 2019</span>
+              <h3 class="title">React Native Developer</h3>
+              <p>Elocker</p>
+              <span class="date">June 2018- November 2018</span>
             </div>
             <div class="experience_number">
               <span>02</span>
@@ -78,9 +77,9 @@
             data-wow-delay="0.8s"
           >
             <div class="experience_title order-last">
-              <h3 class="title">Web Developer</h3>
-              <p>GrayGrids</p>
-              <span class="date">June 2018- August 2019</span>
+              <h3 class="title">Embedded Software Developer</h3>
+              <p>Memstech JSC</p>
+              <span class="date">January 2017- June 2018</span>
             </div>
             <div class="experience_number">
               <span>03</span>
@@ -108,5 +107,18 @@ export default {
 };
 </script>
 
-<style src="../library/freelancer-free-lite/assets/css/style.css">
+<style src="../library/freelancer-free-lite/assets/css/style.css"></style>
+<style scoped>
+.section_title .title {
+  font-weight: 700;
+  font-size: 45px;
+  color: #000;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .section_title .title {
+    font-size: 30px;
+  }
+}
 </style>

@@ -4,7 +4,7 @@ module.exports = {
     config
       .plugin('html')
       .tap((args) => {
-        args[0].title = "Khoa Le's Profile";
+        args[0].title = "lnanhkhoa";
         return args;
       });
   },

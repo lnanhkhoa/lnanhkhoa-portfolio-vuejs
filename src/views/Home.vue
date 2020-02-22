@@ -2,8 +2,8 @@
   <div id="home">
     <!--====== HEADER PART START ======-->
 
-    <header id="home1" class="header-area">
-      <div class="navigation fixed-top">
+    <header id="headerPart" class="header-area">
+      <div class="navigation sticky fixed-top">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
@@ -28,8 +28,17 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                      <a class="page-scroll" href>Home</a>
+                    <li
+                      class="nav-item"
+                      v-for="(item, index) in items"
+                      v-bind:key="index"
+                      v-bind:class="itemActived===item.type?'active': ''"
+                      @click="itemActived=item.type"
+                    >
+                      <a class="page-scroll" v-bind:href="item.href">{{item.name}}</a>
+                    </li>
+                    <!-- <li class="nav-item" >
+                      <a class="page-scroll" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                       <a class="page-scroll" href="#about">About</a>
@@ -38,8 +47,8 @@
                       <a class="page-scroll" href="#service">Services</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#experience">Experience</a>
-                    </li>
+                    <a class="page-scroll" href="#experience">Experience</a>
+                    </li>-->
                   </ul>
                 </div>
                 <!-- navbar collapse -->
@@ -93,7 +102,7 @@
                 <h4 class="sub-title">Hello, I’m</h4>
                 <h1 class="title">Le Nguyen Anh Khoa</h1>
                 <p class="role">A Backend Developer</p>
-                <a class="main-btn" href="#about">About Me</a>
+                <a class="main-btn" href="#">My Resume</a>
               </div>
               <!-- header content right -->
             </div>
@@ -128,6 +137,11 @@
                         <i class="lni-linkedin-original"></i>
                       </a>
                     </li>
+                    <li>
+                      <a href="mailto: lnanhkhoa303@gmail.com">
+                        <i class="lni-google"></i>
+                      </a>
+                    </li>
                   </ul>
                 </div>
                 <!-- header social -->
@@ -146,27 +160,36 @@
 
     <!--====== ABOUT PART START ======-->
 
-    <div id="terminal" class="row justify-content-center pt-125 pb-130">
+    <section id="terminal" ref="terminal" class="row justify-content-center pt-125 pb-130">
       <div class="col-lg-10 col-md-10 col-sm-10 pl-30 pr-30">
         <div class="section-title text-center">
-          <h2 class="title">Love Terminal</h2>
+          <h2 class="title title-linux">
+            <span class="success">➜</span>
+            {{" "}}
+            <span class="directory">~</span> love
+            <span class="text-info">Linux </span>
+            {{" "}}
+            <i class="lni-heart-filled text-danger"></i>
+            <i class="lni-heart-filled text-danger"></i>
+            <i class="lni-heart-filled text-danger"></i>
+          </h2>
         </div>
         <!-- section title -->
         <terminal v-bind:commands="COMMANDS" v-bind:initialOutput="INITIAL_OUTPUT" />
       </div>
-    </div>
+    </section>
 
     <!--====== HEADER PART ENDS ======-->
 
     <!--====== ABOUT PART START ======-->
 
-    <section id="about" class="about-area pt-125 pb-130">
+    <section id="about" ref="about" class="about-area pt-125 pb-130">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="section-title text-center">
               <h2 class="title">About Me</h2>
-              <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p>
+              <p>I’m a Software Developer. I’m seeking to pursue a successful career path in software development to build superior software applications and other core systems.</p>
             </div>
             <!-- section title -->
           </div>
@@ -175,8 +198,8 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="about-content mt-50">
-              <h5 class="about-title">Hi There! I'm Mark Parker</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h5 class="about-title">Hi!  I'm Khoa Le</h5>
+              <p>I’m a Software Developer. I’m seeking to pursue a successful career path in software development to build superior software applications and other core systems.</p>
               <ul class="clearfix">
                 <li>
                   <div class="single-info d-flex align-items-center">
@@ -238,7 +261,7 @@
             <div class="about-skills pt-25">
               <div class="skill-item mt-25">
                 <div class="skill-header">
-                  <h6 class="skill-title">HTML</h6>
+                  <h6 class="skill-title">NodeJS</h6>
                 </div>
                 <div class="skill-bar">
                   <div class="bar-inner">
@@ -249,36 +272,36 @@
               <!-- skill item -->
               <div class="skill-item mt-25">
                 <div class="skill-header">
-                  <h6 class="skill-title">CSS</h6>
+                  <h6 class="skill-title">React Native</h6>
                 </div>
                 <div class="skill-bar">
                   <div class="bar-inner">
-                    <div class="bar progress-line" data-width="60" v-bind:style="{width: '60%'}"></div>
+                    <div class="bar progress-line" data-width="50" v-bind:style="{width: '80%'}"></div>
+                  </div>
+                </div>
+              </div>
+               <!-- skill item -->
+              <div class="skill-item mt-25">
+                <div class="skill-header">
+                  <h6 class="skill-title">ReactJS</h6>
+                </div>
+                <div class="skill-bar">
+                  <div class="bar-inner">
+                    <div class="bar progress-line" data-width="60" v-bind:style="{width: '50%'}"></div>
                   </div>
                 </div>
               </div>
               <!-- skill item -->
-              <div class="skill-item mt-25">
+              <!-- <div class="skill-item mt-25">
                 <div class="skill-header">
-                  <h6 class="skill-title">Photoshop</h6>
-                </div>
-                <div class="skill-bar">
-                  <div class="bar-inner">
-                    <div class="bar progress-line" data-width="50"></div>
-                  </div>
-                </div>
-              </div>
-              <!-- skill item -->
-              <div class="skill-item mt-25">
-                <div class="skill-header">
-                  <h6 class="skill-title">Sketch</h6>
+                  <h6 class="skill-title">Systems</h6>
                 </div>
                 <div class="skill-bar">
                   <div class="bar-inner">
                     <div class="bar progress-line" data-width="90"></div>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!-- skill item -->
             </div>
             <!-- about skills -->
@@ -293,7 +316,7 @@
 
     <!--====== EXPERIENCE PART START ======-->
 
-    <section id="experience" class="work_experience_area pt-115">
+    <section id="experience" ref="experience" class="work_experience_area pt-115">
       <road-map />
     </section>
 
@@ -301,7 +324,7 @@
 
     <!--====== BLOG PART START ======-->
 
-    <section id="blog" class="blog-area pt-125 pb-130">
+    <section id="blog" ref="blog" class="blog-area pt-125 pb-130">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -375,7 +398,7 @@
 
     <!--====== SERVICES PART START ======-->
 
-    <section id="service" class="services-area gray-bg pt-125 pb-130">
+    <section id="services" ref="services" class="services-area gray-bg pt-125 pb-130">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -477,8 +500,26 @@
       </div>
       <!-- container -->
     </section>
-
+  
     <!--====== SERVICES PART ENDS ======-->
+
+     <!--====== FOOTER PART START ======-->
+
+    <footer id="footer" class="footer-area">
+        <div class="footer-copyright pb-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-text text-center pt-20">
+                            <p>Made by <a href="https://lnanhkhoa.com" rel="nofollow">lnanhkhoa</a> Copyright © 2020</p>
+                        </div> <!-- copyright text -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+    </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
   </div>
   <!--====== HEADER PART ENDS ======-->
 </template>

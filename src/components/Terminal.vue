@@ -31,9 +31,9 @@ export default {
   },
   props: {
     commands: {
-      type: Array,
+      type: Object,
       default: () => {
-        return [];
+        return {};
       }
     },
     initialOutput: {
