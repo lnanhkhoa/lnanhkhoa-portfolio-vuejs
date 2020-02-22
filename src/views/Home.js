@@ -1,7 +1,7 @@
-import Terminal from "../components/Terminal";
+import Terminal from "../components/Terminal.vue";
 import RoadMap from "../components/RoadMap.vue";
 import _ from "lodash";
-import { COMMANDS, INITIAL_OUTPUT } from "./data";
+import { COMMANDS } from "./data";
 export default {
   name: "Home",
   components: {
@@ -10,7 +10,6 @@ export default {
   },
   data() {
     return {
-      INITIAL_OUTPUT: INITIAL_OUTPUT,
       COMMANDS: COMMANDS,
       itemActived: "home",
       refNames: ["home", "about", "services", "experience"],
@@ -35,7 +34,7 @@ export default {
           type: "services",
           href: "#services"
         }
-      ]
+      ],
     };
   },
 

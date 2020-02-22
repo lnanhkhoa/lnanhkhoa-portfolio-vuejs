@@ -1,5 +1,6 @@
 <template>
   <div class="terminal-output" ref="terminalOutput">
+      <div class="terminal-line text-center">Welcome to lnanhkhoa's pages — Type <span class='code'>help</span> for a list of supported commands.</div>
     <div v-bind:key="index" v-for="(output, index) in outputs">
       <div class="terminal-line">
         <span v-html="output"></span>
@@ -28,7 +29,8 @@ export default {
   position: relative;
   font-family: 'Anonymous Pro', monospace;
   font-size: 0.9rem;
-  color: #b7c5d2;
+  // color: #b7c5d2;
+  color: #F3F6F6;
 }
 
 .terminal-output {
@@ -37,15 +39,15 @@ export default {
 }
 
 .code, .error, .fa-heart {
-  color: #d7566a;
+  color: #17a2b8!important;
 }
 
 .success {
-  color: #8dd39e;
+  color: #dbe9e5;
 }
 
 .directory {
-  color: #75e1e7;
+  color: #17a2b8;
   font-weight: 500;
 }
 </style>

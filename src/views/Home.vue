@@ -37,18 +37,6 @@
                     >
                       <a class="page-scroll" v-bind:href="item.href">{{item.name}}</a>
                     </li>
-                    <!-- <li class="nav-item" >
-                      <a class="page-scroll" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#service">Services</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="page-scroll" href="#experience">Experience</a>
-                    </li>-->
                   </ul>
                 </div>
                 <!-- navbar collapse -->
@@ -99,9 +87,9 @@
           <div class="row align-items-center">
             <div class="col-xl-5 col-lg-6">
               <div class="header-content-right">
-                <h4 class="sub-title">Hello, I’m</h4>
+                <h4 class="sub-title">Hi, I’m</h4>
                 <h1 class="title">Le Nguyen Anh Khoa</h1>
-                <p class="role">A Backend Developer</p>
+                <p class="role">A Software Developer</p>
                 <a class="main-btn" href="#">My Resume</a>
               </div>
               <!-- header content right -->
@@ -160,14 +148,14 @@
 
     <!--====== ABOUT PART START ======-->
 
-    <section id="terminal" ref="terminal" class="row justify-content-center pt-125 pb-130">
+    <section id="terminal" ref="terminal" class="row justify-content-center pt-60 pb-60">
       <div class="col-lg-10 col-md-10 col-sm-10 pl-30 pr-30">
         <div class="section-title text-center">
-          <h2 class="title title-linux">
-            <span class="success">➜</span>
+          <h2 class="title">
+            <span class="directory">➜</span>
             {{" "}}
             <span class="directory">~</span> love
-            <span class="text-info">Linux </span>
+            <span class="text-info">Linux</span>
             {{" "}}
             <i class="lni-heart-filled text-danger"></i>
             <i class="lni-heart-filled text-danger"></i>
@@ -183,13 +171,15 @@
 
     <!--====== ABOUT PART START ======-->
 
-    <section id="about" ref="about" class="about-area pt-125 pb-130">
+    <section id="about" ref="about" class="about-area gray-bg pt-60 pb-60">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="section-title text-center">
               <h2 class="title">About Me</h2>
-              <p>I’m a Software Developer. I’m seeking to pursue a successful career path in software development to build superior software applications and other core systems.</p>
+              <span>My full name's Le Nguyen Anh Khoa. 
+                </span>
+                <span>I am interested in full-stack/backend developer and seeking to pursue a successful career path in software development.</span>
             </div>
             <!-- section title -->
           </div>
@@ -198,9 +188,23 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="about-content mt-50">
-              <h5 class="about-title">Hi!  I'm Khoa Le</h5>
-              <p>I’m a Software Developer. I’m seeking to pursue a successful career path in software development to build superior software applications and other core systems.</p>
+              <h5 class="about-title">Summary</h5>
+              <!-- <p>Within 3-years experience in working company environment, I </p> -->
+              <p>Within 3-years experience in working company environment, I can work both backend and frontend.</p>
               <ul class="clearfix">
+                <li>
+                  <div class="single-info d-flex align-items-center">
+                    <div class="info-icon">
+                      <i class="lni-envelope"></i>
+                    </div>
+                    <div class="info-text">
+                      <p>
+                        <span>Email: <a class="about-link" href="mailto:lnanhkhoa303@gmail.com">lnanhkhoa303@gmail.com</a></span>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- single info -->
+                </li>
                 <li>
                   <div class="single-info d-flex align-items-center">
                     <div class="info-icon">
@@ -217,29 +221,17 @@
                 <li>
                   <div class="single-info d-flex align-items-center">
                     <div class="info-icon">
-                      <i class="lni-envelope"></i>
-                    </div>
-                    <div class="info-text">
-                      <p>
-                        <span>Email:</span> lnanhkhoa303@gmail.com
-                      </p>
-                    </div>
-                  </div>
-                  <!-- single info -->
-                </li>
-                <li>
-                  <div class="single-info d-flex align-items-center">
-                    <div class="info-icon">
                       <i class="lni-phone-handset"></i>
                     </div>
                     <div class="info-text">
                       <p>
-                        <span>Phone:</span> +84-39-996-4550
+                        <span>Phone: <a class="about-link" href="tel:+84399964550">+84-39-996-4550</a></span>
                       </p>
                     </div>
                   </div>
                   <!-- single info -->
                 </li>
+                
                 <li>
                   <div class="single-info d-flex align-items-center">
                     <div class="info-icon">
@@ -261,7 +253,7 @@
             <div class="about-skills pt-25">
               <div class="skill-item mt-25">
                 <div class="skill-header">
-                  <h6 class="skill-title">NodeJS</h6>
+                  <h6 class="skill-title">NodeJS - Backend Dev</h6>
                 </div>
                 <div class="skill-bar">
                   <div class="bar-inner">
@@ -272,36 +264,36 @@
               <!-- skill item -->
               <div class="skill-item mt-25">
                 <div class="skill-header">
-                  <h6 class="skill-title">React Native</h6>
+                  <h6 class="skill-title">React Native - Mobile Dev</h6>
                 </div>
                 <div class="skill-bar">
                   <div class="bar-inner">
-                    <div class="bar progress-line" data-width="50" v-bind:style="{width: '80%'}"></div>
-                  </div>
-                </div>
-              </div>
-               <!-- skill item -->
-              <div class="skill-item mt-25">
-                <div class="skill-header">
-                  <h6 class="skill-title">ReactJS</h6>
-                </div>
-                <div class="skill-bar">
-                  <div class="bar-inner">
-                    <div class="bar progress-line" data-width="60" v-bind:style="{width: '50%'}"></div>
+                    <div class="bar progress-line" data-width="75" v-bind:style="{width: '75%'}"></div>
                   </div>
                 </div>
               </div>
               <!-- skill item -->
-              <!-- <div class="skill-item mt-25">
+              <div class="skill-item mt-25">
                 <div class="skill-header">
-                  <h6 class="skill-title">Systems</h6>
+                  <h6 class="skill-title">ReactJS/VueJS - Frontend Dev</h6>
                 </div>
                 <div class="skill-bar">
                   <div class="bar-inner">
-                    <div class="bar progress-line" data-width="90"></div>
+                    <div class="bar progress-line" data-width="50" v-bind:style="{width: '50%'}"></div>
                   </div>
                 </div>
-              </div> -->
+              </div>
+              <!-- skill item -->
+              <div class="skill-item mt-25">
+                <div class="skill-header">
+                  <h6 class="skill-title">Database</h6>
+                </div>
+                <div class="skill-bar">
+                  <div class="bar-inner">
+                    <div class="bar progress-line" data-width="60" v-bind:style="{width: '60%'}"></div>
+                  </div>
+                </div>
+              </div>
               <!-- skill item -->
             </div>
             <!-- about skills -->
@@ -316,7 +308,7 @@
 
     <!--====== EXPERIENCE PART START ======-->
 
-    <section id="experience" ref="experience" class="work_experience_area pt-115">
+    <section id="experience" ref="experience" class="work_experience_area pt-60 pb-60">
       <road-map />
     </section>
 
@@ -324,13 +316,13 @@
 
     <!--====== BLOG PART START ======-->
 
-    <section id="blog" ref="blog" class="blog-area pt-125 pb-130">
+    <section id="blog" ref="blog" class="blog-area gray-bg pt-60 pb-60">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="section-title text-center pb-25">
-              <h2 class="title">From The Blog</h2>
-              <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p>
+              <h2 class="title">Các dự án điển hình</h2>
+              <p>Thời gian làm dev, t trải một vài dự án đáng giá.</p>
             </div>
             <!-- section title -->
           </div>
@@ -340,13 +332,13 @@
           <div class="col-lg-4 col-md-8 col-sm-9">
             <div class="single-blog mt-30">
               <div class="blog-image">
-                <img src="../library/unfold-free-lite/assets/images/blog/b-1.jpg" alt="Blog" />
+                <img src="../assets/loyalty_main.jpg"  alt="Blog" />
               </div>
               <div class="blog-content">
                 <h4 class="blog-title">
-                  <a href="/blog">Hired Releases 2023 Brand Health.</a>
+                  <a href="/my-projects/loyalty">Loyalty Mobile Apps at Bitis</a>
                 </h4>
-                <span>July 26, 2022</span>
+                <span>April, 2019</span>
               </div>
             </div>
             <!-- single blog -->
@@ -358,7 +350,21 @@
               </div>
               <div class="blog-content">
                 <h4 class="blog-title">
-                  <a href="/blog">Hired Releases 2023 Brand Health.</a>
+                  <a href="/blog">End-year Promotion at Bitis</a>
+                </h4>
+                <span>December, 2019</span>
+              </div>
+            </div>
+            <!-- single blog -->
+          </div>
+          <div class="col-lg-4 col-md-8 col-sm-9">
+            <div class="single-blog mt-30">
+              <div class="blog-image">
+                <img src="../library/unfold-free-lite/assets/images/blog/b-3.jpg" alt="Blog" />
+              </div>
+              <div class="blog-content">
+                <h4 class="blog-title">
+                  <a href="/blog">Elocker App at Elocker Startup</a>
                 </h4>
                 <span>July 26, 2022</span>
               </div>
@@ -372,21 +378,12 @@
               </div>
               <div class="blog-content">
                 <h4 class="blog-title">
-                  <a href="/blog">Hired Releases 2023 Brand Health.</a>
+                  <a href="/blog">Elocker App at Elocker Startup</a>
                 </h4>
                 <span>July 26, 2022</span>
               </div>
             </div>
             <!-- single blog -->
-          </div>
-        </div>
-        <!-- row -->
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="blog-more text-center mt-50">
-              <a class="main-btn" href="#">More posts</a>
-            </div>
-            <!-- blog more -->
           </div>
         </div>
         <!-- row -->
@@ -398,13 +395,13 @@
 
     <!--====== SERVICES PART START ======-->
 
-    <section id="services" ref="services" class="services-area gray-bg pt-125 pb-130">
+    <section id="services" ref="services" class="services-area pt-60 pb-60">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="section-title text-center pb-30">
-              <h2 class="title">My Services</h2>
-              <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p>
+              <h2 class="title">My Skills</h2>
+              <p></p>
             </div>
             <!-- section title -->
           </div>
@@ -418,9 +415,16 @@
               </div>
               <div class="service-content">
                 <h4 class="service-title">
-                  <a href="#">Web Design</a>
+                  <a href="#">Backend Developer</a>
                 </h4>
-                <p>Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.</p>
+                <div class="text-left">
+                  <p>
+                    - Thiết kế RESTful API dựa trên
+                    <a href="https://expressjs.com/">Express</a> và
+                    <a href="https://strapi.io/">Strapi.io</a>.
+                  </p>
+                  <p>- Xử lý bất đồng bộ.</p>
+                </div>
               </div>
             </div>
             <!-- single service -->
@@ -432,9 +436,13 @@
               </div>
               <div class="service-content">
                 <h4 class="service-title">
-                  <a href="#contact">Graphic Design</a>
+                  <a href="#contact">React Native Developer</a>
                 </h4>
-                <p>Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.</p>
+                <div class="text-left">
+                  <p>- Lập trình Layout, UI từ bản design đã thống nhất.</p>
+                  <p>- Sử dụng hoặc chỉnh sửa thư viện third party cho phù hợp UX.</p>
+                  <p>- Quản lý state, tương tác hệ thống API bằng Redux, Saga.</p>
+                </div>
               </div>
             </div>
             <!-- single service -->
@@ -446,9 +454,13 @@
               </div>
               <div class="service-content">
                 <h4 class="service-title">
-                  <a href="#">App Design</a>
+                  <a href="#">Database Schema Design</a>
                 </h4>
-                <p>Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.</p>
+                <div class="text-left">
+                  <p>- Sử dụng thường xuyên Mysql, MongoDB.</p>
+                  <p>- Build Model-Relationship in project.</p>
+                  <p>- Xử lý dữ liệu, report data.</p>
+                </div>
               </div>
             </div>
             <!-- single service -->
@@ -460,7 +472,7 @@
               </div>
               <div class="service-content">
                 <h4 class="service-title">
-                  <a href="#">Illustration Design</a>
+                  <a href="#">Linux Experience</a>
                 </h4>
                 <p>Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.</p>
               </div>
@@ -476,7 +488,7 @@
                 <h4 class="service-title">
                   <a href="#">Web Development</a>
                 </h4>
-                <p>Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.</p>
+                <p>Ant Design Pro</p>
               </div>
             </div>
             <!-- single service -->
@@ -500,23 +512,31 @@
       </div>
       <!-- container -->
     </section>
-  
+
     <!--====== SERVICES PART ENDS ======-->
 
-     <!--====== FOOTER PART START ======-->
+    <!--====== FOOTER PART START ======-->
 
-    <footer id="footer" class="footer-area">
-        <div class="footer-copyright pb-20">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="copyright-text text-center pt-20">
-                            <p>Made by <a href="https://lnanhkhoa.com" rel="nofollow">lnanhkhoa</a> Copyright © 2020</p>
-                        </div> <!-- copyright text -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- footer widget -->
+    <footer id="footer" class="footer-area pt-60 pb-60">
+      <div class="footer-copyright pb-20">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="copyright-text text-center pt-20">
+                <p>
+                  Made by
+                  <a href="#" class="footer-link">lnanhkhoa</a>
+                  Copyright © 2020
+                </p>
+              </div>
+              <!-- copyright text -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+      </div>
+      <!-- footer widget -->
     </footer>
 
     <!--====== FOOTER PART ENDS ======-->

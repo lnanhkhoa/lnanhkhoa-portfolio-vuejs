@@ -28,7 +28,7 @@
                       <a href="/">Home</a>
                     </li>
                     <li class="nav-item active">
-                      <a>Blog</a>
+                      <a>{{$route.params.id }}</a>
                     </li>
                   </ul>
                 </div>
@@ -38,8 +38,9 @@
         </div>
       </div>
       <div
+        v-if="pageBanner"
         class="page-banner bg_cover"
-        style="background-image: url(assets/images/page-banner.jpg)"
+        :style="{'background-image': 'url(' + pageBanner + ')'}"
         data-overlay="2"
       >
         <div class="container">
@@ -65,61 +66,22 @@
         <div class="row">
           <div class="single-blog-post mt-50">
             <div class="blog-thumb">
-              <img
-                src="../library/unfold-free-lite/assets/images/blog/bolg-detailes/bolg-detailes.jpg"
-                alt="Blog Details"
-              />
+              <img v-if="blogThumb" v-bind:src="blogThumb" alt="Blog Details" />
             </div>
             <div class="blog-content">
-              <h3 class="blog-title">Nobody Knows What’s Gonna Happen & Make something</h3>
+              <h3 class="blog-title">{{blogTitle}}</h3>
               <ul class="meta">
                 <li>
                   <a href="#">
-                    <i class="lni-calendar"></i> 25 June, 2022
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="lni-heart"></i> 50 Likes
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="lni-comment"></i> 25 Comments
+                    <i class="lni-calendar"></i>
+                    {{createdAt}}
                   </a>
                 </li>
               </ul>
-              <p class="pt-15">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enlquis nostrud
-                exercitation ullam lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                <br />
-                <br />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
-              </p>
-              <blockquote class="blockquote">
-                <p>
-                  <img
-                    class="quote-left"
-                    src="../library/unfold-free-lite/assets/images/blog/bolg-detailes/quote-left.png"
-                    alt="quote"
-                  />Lorem ipsum
-                  dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua. Ut enim ad minim.
-                  <img
-                    class="quote-right"
-                    src="../library/unfold-free-lite/assets/images/blog/bolg-detailes/quote-right.png"
-                    alt
-                  />
-                </p>
-              </blockquote>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              </p>
+
+              <div class="pt-20" v-for="(item, index) in content" v-bind:key="index">
+                 <span v-html="item"></span>
+              </div>
             </div>
           </div>
         </div>
@@ -128,7 +90,7 @@
   </div>
 </template>
 
-<script src="./Blog.js"></script>
+<script src="./MyProjects.js"></script>
 <style src="../library/unfold-free-lite/assets/css/bootstrap.min.css"></style>
 <style src="../library/unfold-free-lite/assets/css/LineIcons.css"></style>
 <style src="../library/unfold-free-lite/assets/css/magnific-popup.css"></style>

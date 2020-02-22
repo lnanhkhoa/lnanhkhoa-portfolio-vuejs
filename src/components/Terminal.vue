@@ -1,7 +1,7 @@
 <template>
   <div class="column-child terminal shadow">
     <div class="terminal-bar dark-mode">
-      <div class="icon-btn close"></div>
+      <div class="icon-btn closed"></div>
       <div class="icon-btn min"></div>
       <div class="icon-btn max"></div>
       <div class="terminal-bar-text is-hidden-mobile dark-mode-text">--~-- guest@lnanhkhoa --~--</div>
@@ -36,16 +36,12 @@ export default {
         return {};
       }
     },
-    initialOutput: {
-      type: String,
-      default: ""
-    }
   },
   data() {
     return {
       blacklistedKeyCodes: [38],
       userInput: "",
-      terminalOutputs: [this.initialOutput],
+      terminalOutputs: [],
       arrow: "➜  "
     };
   },
@@ -161,8 +157,8 @@ p {
   margin-right: 0.6rem;
 }
 
-.close {
-  background-color: #fa615c;
+.closed {
+  background-color: #DC3645;
 }
 
 .max {
@@ -183,7 +179,7 @@ p {
 }
 
 .primary-bg {
-  background-color: rgb(23, 42, 69);
+  background-color: #006b5b;
 }
 
 .shadow {
@@ -195,7 +191,7 @@ p {
 .terminal-bar-text {
   position: absolute;
   margin-top: 3px;
-  color: #383838;
+  color: #dbe9e5;
   width: 100%;
   text-align: center;
   font-weight: 500;
@@ -220,20 +216,20 @@ p {
   position: relative;
   font-family: 'Anonymous Pro', monospace;
   font-size: 0.9rem;
-  color: #b7c5d2;
+  color: #dbe9e5;
 }
 
 .directory {
-  color: #75e1e7;
+  color: #17a2b8;
   font-weight: 500;
 }
 
 .success {
-  color: #8dd39e;
+  color: #dbe9e5;
 }
 
 .code, .error, .fa-heart {
-  color: #d7566a;
+  color: #17a2b8;
 }
 
 .fa-heart {
