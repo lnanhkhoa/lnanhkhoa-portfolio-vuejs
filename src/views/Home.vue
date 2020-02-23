@@ -177,9 +177,8 @@
           <div class="col-lg-8">
             <div class="section-title text-center">
               <h2 class="title">About Me</h2>
-              <span>My full name's Le Nguyen Anh Khoa. 
-                </span>
-                <span>I am interested in full-stack/backend developer and seeking to pursue a successful career path in software development.</span>
+              <span>My full name's Le Nguyen Anh Khoa.</span>
+              <span>I am interested in full-stack/backend developer and seeking to pursue a successful career path in software development.</span>
             </div>
             <!-- section title -->
           </div>
@@ -199,7 +198,13 @@
                     </div>
                     <div class="info-text">
                       <p>
-                        <span>Email: <a class="about-link" href="mailto:lnanhkhoa303@gmail.com">lnanhkhoa303@gmail.com</a></span>
+                        <span>
+                          Email:
+                          <a
+                            class="about-link"
+                            href="mailto:lnanhkhoa303@gmail.com"
+                          >lnanhkhoa303@gmail.com</a>
+                        </span>
                       </p>
                     </div>
                   </div>
@@ -225,13 +230,16 @@
                     </div>
                     <div class="info-text">
                       <p>
-                        <span>Phone: <a class="about-link" href="tel:+84399964550">+84-39-996-4550</a></span>
+                        <span>
+                          Phone:
+                          <a class="about-link" href="tel:+84399964550">+84-39-996-4550</a>
+                        </span>
                       </p>
                     </div>
                   </div>
                   <!-- single info -->
                 </li>
-                
+
                 <li>
                   <div class="single-info d-flex align-items-center">
                     <div class="info-icon">
@@ -332,7 +340,7 @@
           <div class="col-lg-4 col-md-8 col-sm-9">
             <div class="single-blog mt-30">
               <div class="blog-image">
-                <img src="../assets/loyalty_main.jpg"  alt="Blog" />
+                <img src="../assets/loyalty_main.jpg" alt="Blog" />
               </div>
               <div class="blog-content">
                 <h4 class="blog-title">
@@ -517,7 +525,7 @@
 
     <!--====== FOOTER PART START ======-->
 
-    <footer id="footer" class="footer-area pt-60 pb-60">
+    <footer id="footer" class="footer-area pt-60">
       <div class="footer-copyright pb-20">
         <div class="container">
           <div class="row">
