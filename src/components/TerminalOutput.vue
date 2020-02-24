@@ -18,7 +18,7 @@ export default {
     }
   },
   beforeUpdate() {
-    this.$refs.terminalOutput.scrollTop = this.$refs.terminalOutput.scrollHeight;
+    this.$refs.terminalOutput.scrollTop = this.$refs.terminalOutput.scrollHeight*2;
   }
 };
 </script>

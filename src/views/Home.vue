@@ -3,7 +3,7 @@
     <!--====== HEADER PART START ======-->
 
     <header id="headerPart" class="header-area">
-      <div class="navigation sticky fixed-top">
+      <div class="navigation fixed-top">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
@@ -90,7 +90,7 @@
                 <h4 class="sub-title">Hi, I’m</h4>
                 <h1 class="title">Le Nguyen Anh Khoa</h1>
                 <p class="role">A Software Developer</p>
-                <a class="main-btn" href="#">My Resume</a>
+                <a class="main-btn" href="/resume" target="_blank">My Resume</a>
               </div>
               <!-- header content right -->
             </div>
@@ -111,23 +111,23 @@
                 <div class="header-social-icon">
                   <ul>
                     <li>
-                      <a href="https://www.github.com/lnanhkhoa/">
+                      <a href="https://www.github.com/lnanhkhoa/" target="_blank">
                         <i class="lni-github-original"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.linkedin.com/in/lnanhkhoa/">
+                      <a href="https://www.linkedin.com/in/lnanhkhoa/" target="_blank">
                         <i class="lni-facebook-original"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.linkedin.com/in/lnanhkhoa/">
+                      <a href="https://www.linkedin.com/in/lnanhkhoa/" target="_blank">
                         <i class="lni-linkedin-original"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="mailto: lnanhkhoa303@gmail.com">
-                        <i class="lni-google"></i>
+                      <a href="/" target="_blank">
+                        <i class="lni-download"></i>
                       </a>
                     </li>
                   </ul>
@@ -344,7 +344,7 @@
               </div>
               <div class="blog-content">
                 <h4 class="blog-title">
-                  <a href="/my-projects/loyalty">Loyalty Mobile Apps at Bitis</a>
+                  <a href="/my-projects/loyalty" target="_blank">Loyalty Mobile Apps at Bitis</a>
                 </h4>
                 <span>April, 2019</span>
               </div>
@@ -358,7 +358,7 @@
               </div>
               <div class="blog-content">
                 <h4 class="blog-title">
-                  <a href="/blog">End-year Promotion at Bitis</a>
+                  <a href="/my-projects/end-year-promotion" target="_blank">End-year Promotion at Bitis</a>
                 </h4>
                 <span>December, 2019</span>
               </div>
@@ -372,7 +372,7 @@
               </div>
               <div class="blog-content">
                 <h4 class="blog-title">
-                  <a href="/blog">Elocker App at Elocker Startup</a>
+                  <a href="/my-projects/elocker" target="_blank">Elocker App at Elocker Startup</a>
                 </h4>
                 <span>July 26, 2022</span>
               </div>
@@ -386,7 +386,7 @@
               </div>
               <div class="blog-content">
                 <h4 class="blog-title">
-                  <a href="/blog">Elocker App at Elocker Startup</a>
+                  <a href="/my-projects/elocker" target="_blank">Elocker App at Elocker Startup</a>
                 </h4>
                 <span>July 26, 2022</span>
               </div>
