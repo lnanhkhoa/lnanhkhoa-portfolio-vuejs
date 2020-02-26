@@ -12,7 +12,7 @@ export default {
     return {
       COMMANDS: COMMANDS,
       itemActived: "home",
-      refNames: ["home", "about", "services", "experience"],
+      refNames: ["home", "about", "skills", "experience", 'projects'],
       items: [
         {
           name: "Home",
@@ -25,16 +25,21 @@ export default {
           href: "#about"
         },
         {
+          name: "Skills",
+          type: "skills",
+          href: "#skills"
+        },
+        {
           name: "Experience",
           type: "experience",
           href: "#experience"
         },
         {
-          name: "Services",
-          type: "services",
-          href: "#services"
+          name: "Projects",
+          type: "projects",
+          href: "#projects"
         }
-      ],
+      ]
     };
   },
 

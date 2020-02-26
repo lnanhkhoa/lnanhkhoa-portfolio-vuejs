@@ -6,8 +6,8 @@
       <div class="icon-btn max"></div>
       <div class="terminal-bar-text is-hidden-mobile dark-mode-text">--~-- guest@lnanhkhoa --~--</div>
     </div>
-    <div class="terminal-window primary-bg" v-on:click="focusInput">
-      <terminal-output v-bind:outputs="terminalOutputs"/>
+    <div class="terminal-window primary-bg" v-on:click="focusInput" v-bind:style="{height:height}">
+      <terminal-output v-bind:outputs="terminalOutputs" />
       <div class="terminal-line">
         <span class="success">➜</span>
         {{" "}}
@@ -36,6 +36,10 @@ export default {
         return {};
       }
     },
+    height: {
+      type: String,
+      default: "254px"
+    }
   },
   data() {
     return {
@@ -172,7 +176,6 @@ p {
 .terminal-window {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  height: 400px;
   padding: 0.5rem 0rem 0rem 0.5rem;
   display: flex;
   flex-direction: column;
@@ -180,6 +183,7 @@ p {
 
 .primary-bg {
   background-color: #006b5b;
+  // background-color: #227d6c;
 }
 
 .shadow {
@@ -216,7 +220,7 @@ p {
   position: relative;
   font-family: 'Anonymous Pro', monospace;
   font-size: 0.9rem;
-  color: #dbe9e5;
+  color: #b2ccc5;
 }
 
 .directory {
@@ -248,5 +252,15 @@ p {
   .resume {
     padding-bottom: 0.5rem;
   }
+}
+
+
+.footer-link {
+  color: #00a78e;
+}
+.footer-link:hover {
+    /* background-color: #fff; */
+    color: #2b9c87;
+    border-color: #00a78e;
 }
 </style>

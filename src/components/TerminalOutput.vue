@@ -30,7 +30,7 @@ export default {
   font-family: 'Anonymous Pro', monospace;
   font-size: 0.9rem;
   // color: #b7c5d2;
-  color: #F3F6F6;
+  color: #b2ccc5;
 }
 
 .terminal-output {
@@ -40,6 +40,11 @@ export default {
 
 .code, .error, .fa-heart {
   color: #17a2b8!important;
+}
+
+.header-name {
+  font-weight: 600;
+  color: rgb(230, 241, 255);
 }
 
 .success {

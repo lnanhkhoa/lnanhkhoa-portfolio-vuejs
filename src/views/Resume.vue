@@ -19,7 +19,7 @@
                   </li>
                   <li>
                     <a href="tel:+84399964550">
-                      <i class="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-6"></i>039 996 4550
+                      <i class="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-3"></i>039 996 4550
                     </a>
                   </li>
                 </ul>
@@ -90,41 +90,26 @@
                         <div class="d-flex flex-column flex-md-row">
                           <h3
                             class="resume-position-title font-weight-bold mb-1"
-                          >Fullstack Developer</h3>
-                          <div class="resume-company-name ml-auto">Biti's</div>
+                          >{{resumeContent.experience[0].title}}</h3>
+                          <div
+                            class="resume-company-name ml-auto"
+                          >{{resumeContent.experience[0].companyName}}</div>
                         </div>
                         <!--//row-->
-                        <div class="resume-position-time">Nov 2018 - Present</div>
+                        <div class="resume-position-time">{{resumeContent.experience[0].time}}</div>
                       </div>
                       <!--//resume-timeline-item-header-->
                       <div class="resume-timeline-item-desc">
-                        <p>
-                          The company's business is manufacture shoes and retail
-                          and I work as a fullstack developer at IT department
-                          in Biti's Company. There are many projects that I have
-                          joined, such as Biti's Loyalty Mobile App, Biti's
-                          Staff App, Point of Sale and Promotion plans. My team
-                          are migrating monolithic to microservices systems. I
-                          was nominated as Leader in my team, so that I have to
-                          make a lot of efforts.
-                        </p>
+                        <p>{{resumeContent.experience[0].content}}</p>
                         <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
-                        <p>
-                          Praesentium voluptatum deleniti atque corrupti quos
-                          dolores et quas molestias excepturi sint occaecati
-                          cupiditate non provident.
-                        </p>
+                        <p>{{resumeContent.experience[0].achievements}}</p>
                         <ul>
-                          <li>
-                            Lorem ipsum dolor sit amet, 80% consectetuer
-                            adipiscing elit.
-                          </li>
-                          <li>At vero eos et accusamus et iusto odio dignissimos.</li>
-                          <li>
-                            Blanditiis praesentium voluptatum deleniti atque
-                            corrupti.
-                          </li>
-                          <li>Maecenas tempus tellus eget.</li>
+                          <li>- Loyalty App: The Mobile App for Customer Services.</li>
+                          <li>- Pos Web: Point of Sale in website environment.</li>
+                          <li>- Deposit App: The Mobile App for sale and delivery.</li>
+                          <li>- Year End Promotion: The Year End Promotion plann in Dec 2019, it run in website environment.</li>
+                          <li>- Promotion Centralized: The gateway Promotion centralized for create and manage promotion planning.</li>
+                          <li>- Bitopia: The Mobile App for Biti's Staff.</li>
                         </ul>
                         <h4
                           class="resume-timeline-item-desc-heading font-weight-bold"
@@ -165,44 +150,34 @@
                         <div class="d-flex flex-column flex-md-row">
                           <h3
                             class="resume-position-title font-weight-bold mb-1"
-                          >React Native Developer</h3>
-                          <div class="resume-company-name ml-auto">Elocker</div>
+                          >{{resumeContent.experience[1].title}}</h3>
+                          <div
+                            class="resume-company-name ml-auto"
+                          >{{resumeContent.experience[1].companyName}}</div>
                         </div>
                         <!--//row-->
-                        <div class="resume-position-time">Jun 2018 - Nov 2018</div>
+                        <div class="resume-position-time">{{resumeContent.experience[1].time}}</div>
                       </div>
                       <!--//resume-timeline-item-header-->
                       <div class="resume-timeline-item-desc">
-                        <p>
-                          I knowed and joined the startup project with my team -
-                          the project's name is Elocker. The business model was
-                          built in store personal belogings with ease, security.
-                          Customer can use application in their smartphone to
-                          check where the closest locker and make an reservation
-                          item. We can extend the business model to apply to
-                          logistic, delivery and travel. I took up mobile
-                          developer position with that challenge. So, I develop
-                          a application at a locker center, it's interact to
-                          user and monitor the hardware control.
-                        </p>
-                        <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements</h4>
-                        <p>
-                          Cum sociis natoque penatibus et magnis dis parturient
-                          montes, nascetur ridiculus mus. Donec quam felis,
-                          ultricies nec, pellentesque eu, pretium quis, sem.
-                        </p>
+                        <p>{{resumeContent.experience[1].content}}</p>
+                        <h4
+                          class="resume-timeline-item-desc-heading font-weight-bold"
+                        >Responsibility</h4>
+                        <ul>
+                          <li>- Like interactive Channel for Hardware team and Software team.</li>
+                          <li>- Build React Native Apps.</li>
+                          <li>- Support Hardware team to monitoring ElockerVN operating system</li>
+                        </ul>
                         <h4
                           class="resume-timeline-item-desc-heading font-weight-bold"
                         >Technologies used:</h4>
                         <ul class="list-inline">
                           <li class="list-inline-item">
-                            <span class="badge badge-primary badge-pill">React</span>
+                            <span class="badge badge-primary badge-pill">React Native</span>
                           </li>
                           <li class="list-inline-item">
-                            <span class="badge badge-primary badge-pill">Redux</span>
-                          </li>
-                          <li class="list-inline-item">
-                            <span class="badge badge-primary badge-pill">Saga</span>
+                            <span class="badge badge-primary badge-pill">ReactJS</span>
                           </li>
                           <li class="list-inline-item">
                             <span class="badge badge-primary badge-pill">NodeJS/Express</span>
@@ -221,46 +196,35 @@
                         <div class="d-flex flex-column flex-md-row">
                           <h3
                             class="resume-position-title font-weight-bold mb-1"
-                          >Embedded Software Engineer</h3>
-                          <div class="resume-company-name ml-auto">Memstech JSC</div>
+                          >{{resumeContent.experience[2].title}}</h3>
+                          <div
+                            class="resume-company-name ml-auto"
+                          >{{resumeContent.experience[2].companyName}}</div>
                         </div>
                         <!--//row-->
-                        <div class="resume-position-time">Jan 2017 - Nov 2018</div>
+                        <div class="resume-position-time">{{resumeContent.experience[2].time}}</div>
                       </div>
                       <!--//resume-timeline-item-header-->
                       <div class="resume-timeline-item-desc">
-                        <p>
-                          Since the graduation date at HCM University of
-                          Technology, I took part in Memstech JSC - at District
-                          9, HCMC. In company, my role is embedded software
-                          engineer. All projects are aim at Agriculture System.
-                          Every day, I programing to monitor MCU in order to
-                          read Sensor, control devices and communicate server.
-                        </p>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetuer adipiscing
-                          elit. Aenean commodo ligula eget dolor. Aenean massa.
-                          Cum sociis natoque penatibus et magnis dis parturient
-                          montes.
-                        </p>
+                        <p>{{resumeContent.experience[2].content}}</p>
                         <h4
                           class="resume-timeline-item-desc-heading font-weight-bold"
                         >Technologies used:</h4>
                         <ul class="list-inline">
                           <li class="list-inline-item">
-                            <span class="badge badge-primary badge-pill">Django</span>
+                            <span class="badge badge-primary badge-pill">TI MCU</span>
                           </li>
                           <li class="list-inline-item">
-                            <span class="badge badge-primary badge-pill">JavaScript</span>
+                            <span class="badge badge-primary badge-pill">Arduino</span>
                           </li>
                           <li class="list-inline-item">
-                            <span class="badge badge-primary badge-pill">Node.js</span>
+                            <span class="badge badge-primary badge-pill">Python</span>
                           </li>
                           <li class="list-inline-item">
-                            <span class="badge badge-primary badge-pill">Require.js</span>
+                            <span class="badge badge-primary badge-pill">C++</span>
                           </li>
                           <li class="list-inline-item">
-                            <span class="badge badge-primary badge-pill">HTML/SASS</span>
+                            <span class="badge badge-primary badge-pill">React Native</span>
                           </li>
                         </ul>
                       </div>
@@ -279,11 +243,10 @@
                 <div class="resume-section-content">
                   <ul class="list-unstyled">
                     <li>
-                      <div
-                        class="resume-degree font-weight-bold"
-                      >BE Electronics and Telecommunications</div>
-                      <div class="resume-degree-org">HCM University of Technology</div>
+                      <div class="resume-degree font-weight-bold">HCM University of Technology</div>
                       <div class="resume-degree-time">2012 - 2017</div>
+                      <div class="resume-degree-org">BE Electronics and Telecommunications</div>
+                      <div class="resume-degree-org">GPA: 7.13</div>
                     </li>
                   </ul>
                 </div>
@@ -298,7 +261,7 @@
                     <h4 class="resume-skills-cat font-weight-bold">Frontend</h4>
                     <ul class="list-unstyled mb-4">
                       <li class="mb-2">
-                        <div class="resume-skill-name">ReactJS</div>
+                        <div class="resume-skill-name">ReactJS/VueJS</div>
                         <div class="progress resume-progress">
                           <div
                             class="progress-bar theme-progress-bar-dark"
@@ -306,20 +269,7 @@
                             style="width: 80%"
                             aria-valuenow="25"
                             aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
-                        </div>
-                      </li>
-                      <li class="mb-2">
-                        <div class="resume-skill-name">VueJS</div>
-                        <div class="progress resume-progress">
-                          <div
-                            class="progress-bar theme-progress-bar-dark"
-                            role="progressbar"
-                            style="width: 60%"
-                            aria-valuenow="25"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
+                            aria-valuemax="90"
                           ></div>
                         </div>
                       </li>
@@ -329,10 +279,10 @@
                           <div
                             class="progress-bar theme-progress-bar-dark"
                             role="progressbar"
-                            style="width: 96%"
+                            style="width: 90%"
                             aria-valuenow="25"
                             aria-valuemin="0"
-                            aria-valuemax="100"
+                            aria-valuemax="90"
                           ></div>
                         </div>
                       </li>
@@ -349,10 +299,10 @@
                           <div
                             class="progress-bar theme-progress-bar-dark"
                             role="progressbar"
-                            style="width: 100%"
+                            style="width: 90%"
                             aria-valuenow="25"
                             aria-valuemin="0"
-                            aria-valuemax="100"
+                            aria-valuemax="90"
                           ></div>
                         </div>
                       </li>
@@ -402,7 +352,7 @@
                         <span class="badge badge-light">Code Review</span>
                       </li>
                       <li class="list-inline-item">
-                        <span class="badge badge-light">Unit Testing</span>
+                        <span class="badge badge-light">Unit Test</span>
                       </li>
                     </ul>
                   </div>
@@ -446,9 +396,9 @@
                 <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Interests</h2>
                 <div class="resume-section-content">
                   <ul class="list-unstyled">
-                    <li class="mb-1">Football</li>
-                    <li class="mb-1">Climbing</li>
-                    <li class="mb-1">Games</li>
+                    <li class="mb-1">- Football</li>
+                    <li class="mb-1">- Climbing</li>
+                    <li class="mb-1">- Games</li>
                   </ul>
                 </div>
               </section>
@@ -461,15 +411,20 @@
       </div>
     </article>
 
-    <footer class="footer text-center pt-2 pb-5">
-    </footer>
+    <footer class="footer text-center pt-2 pb-5"></footer>
   </div>
 </template>
 
 
 <script>
+import { resumeContent } from "./data";
 export default {
-  name: "Resume"
+  name: "Resume",
+  data() {
+    return {
+      resumeContent: resumeContent
+    };
+  }
 };
 </script>
 

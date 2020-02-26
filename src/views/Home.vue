@@ -88,8 +88,8 @@
             <div class="col-xl-5 col-lg-6">
               <div class="header-content-right">
                 <h4 class="sub-title">Hi, I’m</h4>
-                <h1 class="title">Le Nguyen Anh Khoa</h1>
-                <p class="role">A Software Developer</p>
+                <h1 class="title">Le Khoa</h1>
+                <p class="role">Software Developer</p>
                 <a class="main-btn" href="/resume" target="_blank">My Resume</a>
               </div>
               <!-- header content right -->
@@ -116,7 +116,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.linkedin.com/in/lnanhkhoa/" target="_blank">
+                      <a href="https://www.facebook.com/lnanhkhoa/" target="_blank">
                         <i class="lni-facebook-original"></i>
                       </a>
                     </li>
@@ -126,8 +126,13 @@
                       </a>
                     </li>
                     <li>
-                      <a href="/" target="_blank">
+                      <a href="../assets/cv-lnanhkhoa.pdf">
                         <i class="lni-download"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/" target="_blank">
+                        <i class="lni lni-text-align-justify"></i>
                       </a>
                     </li>
                   </ul>
@@ -143,31 +148,6 @@
       </div>
       <!-- header content -->
     </header>
-
-    <!--====== HEADER PART ENDS ======-->
-
-    <!--====== ABOUT PART START ======-->
-
-    <section id="terminal" ref="terminal" class="row justify-content-center pt-60 pb-60">
-      <div class="col-lg-10 col-md-10 col-sm-10 pl-30 pr-30">
-        <div class="section-title text-center">
-          <h2 class="title">
-            <span class="directory">➜</span>
-            {{" "}}
-            <span class="directory">~</span> love
-            <span class="text-info">Linux</span>
-            {{" "}}
-            <i class="lni-heart-filled text-danger"></i>
-            <i class="lni-heart-filled text-danger"></i>
-            <i class="lni-heart-filled text-danger"></i>
-          </h2>
-        </div>
-        <!-- section title -->
-        <terminal v-bind:commands="COMMANDS" v-bind:initialOutput="INITIAL_OUTPUT" />
-      </div>
-    </section>
-
-    <!--====== HEADER PART ENDS ======-->
 
     <!--====== ABOUT PART START ======-->
 
@@ -187,9 +167,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="about-content mt-50">
-              <h5 class="about-title">Summary</h5>
-              <!-- <p>Within 3-years experience in working company environment, I </p> -->
-              <p>Within 3-years experience in working company environment, I can work both backend and frontend.</p>
+              <h5 class="about-title">Contact</h5>
               <ul class="clearfix">
                 <li>
                   <div class="single-info d-flex align-items-center">
@@ -314,6 +292,143 @@
 
     <!--====== ABOUT PART ENDS ======-->
 
+    <!--====== SERVICES PART START ======-->
+
+    <section id="skills" ref="skills" class="services-area pt-60 pb-60">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center pb-30">
+              <h2 class="title">My Skills</h2>
+              <p></p>
+            </div>
+            <!-- section title -->
+          </div>
+        </div>
+        <!-- row -->
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6 col-sm-8">
+            <div class="single-service text-center mt-30">
+              <div class="service-icon">
+                <i class="lni lni-cog"></i>
+              </div>
+              <div class="service-content">
+                <h4 class="service-title">
+                  <a href="#">Backend Developer</a>
+                </h4>
+                <div class="text-left">
+                  <p>- Organize the logic of the system.</p>
+                  <p>- Async handling.</p>
+                  <p>
+                    - Manage APIs resources base on
+                    <a href="https://expressjs.com/">Express</a> và
+                    <a href="https://strapi.io/">Strapi</a> Frameworks.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- single service -->
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-8">
+            <div class="single-service text-center mt-30">
+              <div class="service-icon">
+                <i class="lni lni-database"></i>
+              </div>
+              <div class="service-content">
+                <h4 class="service-title">
+                  <a href="#">Database Schema Design</a>
+                </h4>
+                <div class="text-left">
+                  <p>- Build Model-Relationship.</p>
+                  <p>- Sql query, collect data.</p>
+                  <p>- Knex, Bookshelf.js, Mongoose.</p>
+                </div>
+              </div>
+            </div>
+            <!-- single service -->
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-8">
+            <div class="single-service text-center mt-30">
+              <div class="service-icon">
+                <i class="lni-mobile"></i>
+              </div>
+              <div class="service-content">
+                <h4 class="service-title">
+                  <a href="#contact">React Native Developer</a>
+                </h4>
+                <div class="text-left">
+                  <p>- Coding layout design.</p>
+                  <p>- Manage State Component and Redux.</p>
+                  <p>- Interface to Backend by Saga.</p>
+                  <p>- Use Ignite resource - React Native boilerplates.</p>
+                </div>
+              </div>
+            </div>
+            <!-- single service -->
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-8">
+            <div class="single-service text-center mt-30">
+              <div class="service-icon">
+                <i class="lni-website"></i>
+              </div>
+              <div class="service-content">
+                <h4 class="service-title">
+                  <a href="#">Web Development</a>
+                </h4>
+                <div class="text-left">
+                  <p>- Ant Design.</p>
+                  <p>- React Boilerplate.</p>
+                </div>
+              </div>
+            </div>
+            <!-- single service -->
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-8">
+            <div class="single-service text-center mt-30">
+              <div class="service-icon">
+                <!-- <i class="lni-support"></i> -->
+                <img
+                  src="../assets/linux-svgrepo-com.svg"
+                  v-bind:style="{color: '#00a78e'}"
+                />
+              </div>
+              <div class="service-content">
+                <h4 class="service-title">
+                  <a href="#">Linux Experience</a>
+                </h4>
+                <div class="text-left">
+                  <p> - Build and Deployment.</p>
+                </div>
+              </div>
+            </div>
+            <!-- single service -->
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-8">
+            <div class="single-service text-center mt-30">
+              <div class="service-icon">
+                <i class='lni lni-git'></i>
+              </div>
+              <div class="service-content">
+                <h4 class="service-title">
+                  <a href="#">Management Tools</a>
+                </h4>
+                <div class="text-left">
+                  <p>- Bitbucket, Github.</p>
+                  <p>- Trello.</p>
+                  <p>- Slack.</p>
+                </div>
+              </div>
+            </div>
+            <!-- single service -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <!--====== SERVICES PART ENDS ======-->
+
     <!--====== EXPERIENCE PART START ======-->
 
     <section id="experience" ref="experience" class="work_experience_area pt-60 pb-60">
@@ -324,13 +439,13 @@
 
     <!--====== BLOG PART START ======-->
 
-    <section id="blog" ref="blog" class="blog-area gray-bg pt-60 pb-60">
+    <section id="projects" ref="projects" class="blog-area gray-bg pt-60 pb-60">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="section-title text-center pb-25">
-              <h2 class="title">Các dự án điển hình</h2>
-              <p>Thời gian làm dev, t trải một vài dự án đáng giá.</p>
+              <h2 class="title">My special projects</h2>
+              <!-- <p>Thời gian làm dev, t trải một vài dự án đáng giá.</p> -->
             </div>
             <!-- section title -->
           </div>
@@ -358,7 +473,10 @@
               </div>
               <div class="blog-content">
                 <h4 class="blog-title">
-                  <a href="/my-projects/end-year-promotion" target="_blank">End-year Promotion at Bitis</a>
+                  <a
+                    href="/my-projects/end-year-promotion"
+                    target="_blank"
+                  >End-year Promotion at Bitis</a>
                 </h4>
                 <span>December, 2019</span>
               </div>
@@ -400,128 +518,6 @@
     </section>
 
     <!--====== BLOG PART ENDS ======-->
-
-    <!--====== SERVICES PART START ======-->
-
-    <section id="services" ref="services" class="services-area pt-60 pb-60">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="section-title text-center pb-30">
-              <h2 class="title">My Skills</h2>
-              <p></p>
-            </div>
-            <!-- section title -->
-          </div>
-        </div>
-        <!-- row -->
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6 col-sm-8">
-            <div class="single-service text-center mt-30">
-              <div class="service-icon">
-                <i class="lni-code-alt"></i>
-              </div>
-              <div class="service-content">
-                <h4 class="service-title">
-                  <a href="#">Backend Developer</a>
-                </h4>
-                <div class="text-left">
-                  <p>
-                    - Thiết kế RESTful API dựa trên
-                    <a href="https://expressjs.com/">Express</a> và
-                    <a href="https://strapi.io/">Strapi.io</a>.
-                  </p>
-                  <p>- Xử lý bất đồng bộ.</p>
-                </div>
-              </div>
-            </div>
-            <!-- single service -->
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-8">
-            <div class="single-service text-center mt-30">
-              <div class="service-icon">
-                <i class="lni-color-pallet"></i>
-              </div>
-              <div class="service-content">
-                <h4 class="service-title">
-                  <a href="#contact">React Native Developer</a>
-                </h4>
-                <div class="text-left">
-                  <p>- Lập trình Layout, UI từ bản design đã thống nhất.</p>
-                  <p>- Sử dụng hoặc chỉnh sửa thư viện third party cho phù hợp UX.</p>
-                  <p>- Quản lý state, tương tác hệ thống API bằng Redux, Saga.</p>
-                </div>
-              </div>
-            </div>
-            <!-- single service -->
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-8">
-            <div class="single-service text-center mt-30">
-              <div class="service-icon">
-                <i class="lni-mobile"></i>
-              </div>
-              <div class="service-content">
-                <h4 class="service-title">
-                  <a href="#">Database Schema Design</a>
-                </h4>
-                <div class="text-left">
-                  <p>- Sử dụng thường xuyên Mysql, MongoDB.</p>
-                  <p>- Build Model-Relationship in project.</p>
-                  <p>- Xử lý dữ liệu, report data.</p>
-                </div>
-              </div>
-            </div>
-            <!-- single service -->
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-8">
-            <div class="single-service text-center mt-30">
-              <div class="service-icon">
-                <i class="lni-vector"></i>
-              </div>
-              <div class="service-content">
-                <h4 class="service-title">
-                  <a href="#">Linux Experience</a>
-                </h4>
-                <p>Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.</p>
-              </div>
-            </div>
-            <!-- single service -->
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-8">
-            <div class="single-service text-center mt-30">
-              <div class="service-icon">
-                <i class="lni-website"></i>
-              </div>
-              <div class="service-content">
-                <h4 class="service-title">
-                  <a href="#">Web Development</a>
-                </h4>
-                <p>Ant Design Pro</p>
-              </div>
-            </div>
-            <!-- single service -->
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-8">
-            <div class="single-service text-center mt-30">
-              <div class="service-icon">
-                <i class="lni-support"></i>
-              </div>
-              <div class="service-content">
-                <h4 class="service-title">
-                  <a href="#">Consultancy and Support</a>
-                </h4>
-                <p>Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.</p>
-              </div>
-            </div>
-            <!-- single service -->
-          </div>
-        </div>
-        <!-- row -->
-      </div>
-      <!-- container -->
-    </section>
-
-    <!--====== SERVICES PART ENDS ======-->
 
     <!--====== FOOTER PART START ======-->
 

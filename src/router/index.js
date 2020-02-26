@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import MiniHome from "../views/MiniHome.vue";
 
 Vue.use(VueRouter);
 
@@ -8,7 +8,12 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home
+    component: MiniHome
+  },
+  {
+    path: "/profile",
+    name: "Profile",
+    component: ()=>import(/* webpackChunkName: "about" */ "../views/Home.vue")
   },
   {
     path: "/my-projects/:id",
