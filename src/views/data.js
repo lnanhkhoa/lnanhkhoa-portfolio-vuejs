@@ -9,7 +9,7 @@ export const COMMANDS = {
     <span class="code">resume</span>,
     <span class="code">lnanhkhoa</span>.
       `,
-  profile: '<a href="/profile" target="_blank" class="code">My Profile</a>',
+  profile: '<a href="/profile" target="_blank" class="code">My Profiles</a>',
   lnanhkhoa: "👋 Hi 😏! My fullname is Le Nguyen Anh Khoa.",
   about: `
      I’m a Software Developer. 
@@ -43,7 +43,7 @@ export const COMMANDS = {
     <br>
     <a href='/profile#experience' class='success link' target="_blank">More Detail</a>
     `,
-  project: `
+  projects: `
     <a href='/my-project/loyalty' class='success link' target="_blank">Biti's Loyalty App - Mobile </a>
     <br>
     <a href='/my-project/loyalty' class='success link' target="_blank">Biti's Loyalty App - Mobile </a>
