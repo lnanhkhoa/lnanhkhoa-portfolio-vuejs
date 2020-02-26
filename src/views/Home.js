@@ -74,6 +74,9 @@ export default {
       } else {
         this.itemActived = "home";
       }
+    },
+    downloadFile() {
+      return require('../assets/cv-lnanhkhoa.pdf')
     }
   }
 };

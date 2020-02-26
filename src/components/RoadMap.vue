@@ -50,7 +50,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div
-            class="single_experience d-lg-flexli align-items-center flex-wrap wow fadeIn"
+            class="single_experience d-lg-flex align-items-center flex-wrap wow fadeIn"
             data-wow-duration="1.3s"
             data-wow-delay="0.8s"
           >

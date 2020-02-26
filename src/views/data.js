@@ -1,14 +1,16 @@
 export const COMMANDS = {
   help: `Supported commands: 
     <span class="code">about</span>,
-    <span class="code">experience</span>,
-    <span class="code">profile</span>,
-    <span class="code">education</span>,
-    <span class="code">project</span>,
     <span class="code">skills</span>,
-    <span class="code">resume</span>.
+    <span class="code">education</span>,
+    <span class="code">experience</span>,
+    <span class="code">projects</span>,
+    <span class="code">profile</span>,
+    <span class="code">resume</span>,
+    <span class="code">lnanhkhoa</span>.
       `,
   profile: '<a href="/profile" target="_blank" class="code">My Profile</a>',
+  lnanhkhoa: "👋 Hi 😏! My fullname is Le Nguyen Anh Khoa.",
   about: `
      I’m a Software Developer. 
     <br>
@@ -25,7 +27,7 @@ export const COMMANDS = {
   `,
   resume: `
         <a href='/resume' class='success link' target="_blank">My Resume</a> 
-        or <a href="/resume" target="_blank" class="code"><i class="lni-download"></i></a>
+        or <a href="./cv-lnanhkhoa.pdf" target="_blank" class="code"><i class="lni-download"></i></a>
   `,
   experience: `<strong class="header-name">Biti's (Nov 2018 - March. 2020)</strong>
     <br>

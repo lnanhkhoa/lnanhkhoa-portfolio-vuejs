@@ -54,7 +54,7 @@
       <div class="content has-text-centered">
         <p>
           Made by
-          <a href="#" class="footer-link">lnanhkhoa</a>
+          <a href="/profile" class="footer-link">lnanhkhoa</a>
           Copyright © 2020
         </p>
       </div>

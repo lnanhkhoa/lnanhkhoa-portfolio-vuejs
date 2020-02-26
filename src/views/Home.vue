@@ -126,7 +126,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="../assets/cv-lnanhkhoa.pdf">
+                      <a v-bind:href="downloadFile">
                         <i class="lni-download"></i>
                       </a>
                     </li>
@@ -151,7 +151,7 @@
 
     <!--====== ABOUT PART START ======-->
 
-    <section id="about" ref="about" class="about-area gray-bg pt-60 pb-60">
+    <section id="about" ref="about" class="about-area pt-60 pb-60">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -294,7 +294,7 @@
 
     <!--====== SERVICES PART START ======-->
 
-    <section id="skills" ref="skills" class="services-area pt-60 pb-60">
+    <section id="skills" ref="skills" class="services-area gray-bg pt-60 pb-60">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
