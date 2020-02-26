@@ -27,7 +27,6 @@ export const COMMANDS = {
   `,
   resume: `
         <a href='/resume' class='success link' target="_blank">My Resume</a> 
-        or <a href="./cv-lnanhkhoa.pdf" target="_blank" class="code"><i class="lni-download"></i></a>
   `,
   experience: `<strong class="header-name">Biti's (Nov 2018 - March. 2020)</strong>
     <br>
@@ -136,6 +135,8 @@ export const resumeContent = {
     }
   ]
 }
+
+export const resumeFile = require('../assets/cv-lnanhkhoa.pdf'); 
 
 
 

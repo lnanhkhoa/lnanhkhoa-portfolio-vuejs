@@ -1,6 +1,9 @@
 <template>
   <div class="terminal-output" ref="terminalOutput">
-      <div class="terminal-line text-center">Welcome to lnanhkhoa's pages — Type <span class='code'>help</span> for a list of supported commands.</div>
+    <div class="terminal-line text-center">
+      Welcome to lnanhkhoa's pages — Type
+      <span class="code">help</span> for a list of supported commands.
+    </div>
     <div v-bind:key="index" v-for="(output, index) in outputs">
       <div class="terminal-line">
         <span v-html="output"></span>
@@ -10,11 +13,17 @@
 </template>
 
 <script>
+import {resumeFile} from '../views/data'
 export default {
   name: "TerminalOutput",
   props: {
     outputs: {
       type: Array
+    }
+  },
+  data(){
+    return {
+      resumeFile
     }
   },
   updated() {
@@ -39,7 +48,7 @@ export default {
 }
 
 .code, .error, .fa-heart {
-  color: #17a2b8!important;
+  color: #17a2b8 !important;
 }
 
 .header-name {

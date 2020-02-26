@@ -1,7 +1,7 @@
 import Terminal from "../components/Terminal.vue";
 import RoadMap from "../components/RoadMap.vue";
 import _ from "lodash";
-import { COMMANDS } from "./data";
+import { COMMANDS, resumeFile} from "./data";
 export default {
   name: "Home",
   components: {
@@ -11,6 +11,7 @@ export default {
   data() {
     return {
       COMMANDS: COMMANDS,
+      resumeFile,
       itemActived: "home",
       refNames: ["home", "about", "skills", "experience", 'projects'],
       items: [

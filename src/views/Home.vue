@@ -126,7 +126,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="../assets/cv-lnanhkhoa.pdf">
+                      <a v-bind:href="resumeFile">
                         <i class="lni-download"></i>
                       </a>
                     </li>

@@ -397,7 +397,6 @@
                 <div class="resume-section-content">
                   <ul class="list-unstyled">
                     <li class="mb-1">- Football</li>
-                    <li class="mb-1">- Climbing</li>
                     <li class="mb-1">- Games</li>
                   </ul>
                 </div>

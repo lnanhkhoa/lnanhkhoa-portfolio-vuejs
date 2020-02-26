@@ -27,7 +27,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="../assets/cv-lnanhkhoa.pdf">
+                      <a v-bind:href="resumeFile">
                         <i class="lni-download"></i>
                       </a>
                     </li>
@@ -64,7 +64,7 @@
 
 <script>
 import Terminal from "../components/Terminal";
-import { COMMANDS } from "./data";
+import { COMMANDS, resumeFile} from "./data";
 export default {
   name: "MiniHome",
   components: {
@@ -72,7 +72,8 @@ export default {
   },
   data() {
     return {
-      COMMANDS
+      COMMANDS,
+      resumeFile
     };
   }
 };
