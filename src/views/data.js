@@ -63,7 +63,6 @@ export const contentProjects = [
     path: "/my-projects/loyalty",
     singleImage: require("../assets/loyalty_main.svg"),
     pageBanner: require("../assets/loyalty-overview.svg"),
-    blogThumb: require("../library/unfold-free-lite/assets/images/blog/bolg-detailes/bolg-detailes.jpg"),
     blogImages: [
       require("../assets/loyalty-image1.svg"),
       require("../assets/loyalty-image2.svg"),
@@ -75,14 +74,19 @@ export const contentProjects = [
       </div>`,
     blogTitle: "Loyalty Mobile App at Biti's",
     content: [
-      // `This is the first project we start working on Biti's Company. This is a mobile application for customer `,
-      `Đây là dự án đầu tiên khi t bắt đầu làm việc tại Biti's. Sản phẩm là ứng dụng mobile dùng để tích điểm khi mua sản phẩm tại của hàng bán lẻ Bitis. 
-      Với mỗi hóa đơn mua sắm tại cửa hàng Biti’s, cửa hàng Biti’s Hunter và website Bitis.com.vn, 
-      bạn sẽ được tích lũy một số điểm tương ứng, có giá trị đổi lấy các ưu đãi và quà tặng hấp dẫn. <br>`
+      `This is the first project we start working on Biti's Company. This is a mobile application for customer point saving. 
+      When customer buying product in Biti's store, they can use it to saving their point, get a coupon and use coupon to discount.
+      Within a bill using Loyalty App, customer can get point, coupon and gift.
+      The project was operating at 10 stores though 1 month, and can be operated at all Biti's store.
+      `
     ],
     contentNext: [
-      `Team size tại thời điểm đó là 4 người bao gồm 1 lead, 1 design và 2 dev (backend + frontend).`,
-      `Team sử dụng thư viện Expressjs để thiết kế hệ thống backend, React Native cho nền tảng Mobile (android, ios).`
+      `Technical Language/Framework we use: <br>
+      - Design: Sketch, Figma <br>
+      - Backend: Nodejs, Expressjs, JWT, Knex, Mysql... <br>
+      - Frontend: React Native, Redux, Saga, Antd .. <br>
+      - System:  Ubuntu, HAproxy, Percona...
+      `
     ]
   },
   {
@@ -95,25 +99,26 @@ export const contentProjects = [
     path: "/my-projects/bitopia",
     singleImage: require("../assets/bitopia_main.svg"),
     pageBanner: require("../assets/bitopia-overview.svg"),
-    blogThumb: require("../library/unfold-free-lite/assets/images/blog/bolg-detailes/bolg-detailes.jpg"),
     blogImages: [
       require("../assets/bitopia-image1.svg"),
       require("../assets/bitopia-image2.svg"),
       require("../assets/bitopia-image3.svg")
     ],
-    blogImageDescription: `<div style="display: flex; justify-content: center;">
-      <p>Chi tiết hơn tại <a href="https://bitis.com.vn/pages/bitis-loyalty">Homepage</a> chính thức của Biti's</p>
-      </div>`,
     blogTitle: "Bitopia Mobile Application at Biti's",
+    blogImageDescription: `<br>`,
     content: [
-      // `This is the first project we start working on Biti's Company. This is a mobile application for customer `,
-      `Đây là dự án đầu tiên khi t bắt đầu làm việc tại Biti's. Sản phẩm là ứng dụng mobile dùng để tích điểm khi mua sản phẩm tại của hàng bán lẻ Bitis. 
-      Với mỗi hóa đơn mua sắm tại cửa hàng Biti’s, cửa hàng Biti’s Hunter và website Bitis.com.vn, 
-      bạn sẽ được tích lũy một số điểm tương ứng, có giá trị đổi lấy các ưu đãi và quà tặng hấp dẫn. <br>`
+      `Bitopia is the application for Biti's staff. A staff in a store use the application to get daily attendance and interface to Point of Sale.
+      He/she can see the stocks in warehouse store , take a order item into a bill and send it to PoS. 
+      And additional feature are manger can tracking performance staff, show up revenue store...
+      <br>`,
     ],
     contentNext: [
-      `Team size tại thời điểm đó là 4 người bao gồm 1 lead, 1 design và 2 dev (backend + frontend).`,
-      `Team sử dụng thư viện Expressjs để thiết kế hệ thống backend, React Native cho nền tảng Mobile (android, ios).`
+      `Technical Language/Framework we use: <br>
+      - Design: Figma <br>
+      - Backend: Nodejs, Strapi, JWT, Bookshelfjs, Mysql... <br>
+      - Frontend: React Native, React Hooks, Redux, Saga, Antd .. <br>
+      - System: Ubuntu, Nginx, Percona...
+      `
     ]
   },
   {
@@ -126,59 +131,61 @@ export const contentProjects = [
     path: "/my-projects/pos",
     singleImage: require("../assets/pos_main.svg"),
     pageBanner: require("../assets/pos-overview.svg"),
-    blogThumb: require("../library/unfold-free-lite/assets/images/blog/bolg-detailes/bolg-detailes.jpg"),
     blogImages: [
       require("../assets/pos-image1.svg"),
       require("../assets/pos-image2.svg"),
       require("../assets/pos-image3.svg"),
       require("../assets/pos-image4.svg"),
-      require("../assets/pos-image5.svg"),
+      require("../assets/pos-image5.svg")
     ],
-    blogImageDescription: `<div style="display: flex; justify-content: center;">
-      <p>Chi tiết hơn tại <a href="https://bitis.com.vn/pages/bitis-loyalty">Homepage</a> chính thức của Biti's</p>
-      </div>`,
+    blogImageDescription: `<br>`,
     blogTitle: "Point of Sale Website at Biti's",
     content: [
-      // `This is the first project we start working on Biti's Company. This is a mobile application for customer `,
-      `Đây là dự án đầu tiên khi t bắt đầu làm việc tại Biti's. Sản phẩm là ứng dụng mobile dùng để tích điểm khi mua sản phẩm tại của hàng bán lẻ Bitis. 
-      Với mỗi hóa đơn mua sắm tại cửa hàng Biti’s, cửa hàng Biti’s Hunter và website Bitis.com.vn, 
-      bạn sẽ được tích lũy một số điểm tương ứng, có giá trị đổi lấy các ưu đãi và quà tặng hấp dẫn. <br>`
+      `The PoS Website Application was built to improve sale and quality serving in Biti's Store.
+      The application having any feature like warehouse import, create bill and can be apply promotion, coupon, voucher...
+      `
     ],
     contentNext: [
-      `Team size tại thời điểm đó là 4 người bao gồm 1 lead, 1 design và 2 dev (backend + frontend).`,
-      `Team sử dụng thư viện Expressjs để thiết kế hệ thống backend, React Native cho nền tảng Mobile (android, ios).`
+      `Technical Language/Framework we use: <br>
+      - Design: Figma <br>
+      - Backend: Nodejs, Strapi, JWT, socket.io, MongoDb... <br>
+      - Frontend: Reactjs, Ant.design .. <br>
+      - System: Ubuntu, Nginx, Kong API Gateway... <br>
+      `
     ]
   },
   {
     id: 4,
     type: "promotion",
-    name: "Year End Promotion 2019",
-    title: "Biti's Year End Promotion 2019",
+    name: "2019 Year End Promotion",
+    title: "2019 Year End Promotion",
     startTime: "Nov 2019",
     createdAt: "25 Feb, 2020",
     path: "/my-projects/promotion",
     singleImage: require("../assets/promotion_main.svg"),
     pageBanner: require("../assets/pos-overview.png"),
-    blogThumb: require("../library/unfold-free-lite/assets/images/blog/bolg-detailes/bolg-detailes.jpg"),
     blogImages: [
       "https://file.hstatic.net/1000230642/file/5ecc1ba29df264ac3de3_187fbd16711c4613a8a6a76c87afbaf6_grande.jpg",
       "https://file.hstatic.net/1000230642/file/dfff0dca3284cbda9295_8680bc72c3224a769ca3d5dc4a79e763_grande.jpg",
       "https://file.hstatic.net/1000230642/file/9e4a8460bb2e42701b3f_f9b4fe3f1a3448be99513b12a3336bfc_grande.jpg",
       "https://i.ytimg.com/vi/e2jC_9xuXwU/maxresdefault.jpg"
     ],
-    blogImageDescription: `<div style="display: flex; justify-content: center;">
-      <p>Chi tiết hơn tại <a href="https://bitis.com.vn/pages/bitis-loyalty">Homepage</a> chính thức của Biti's</p>
-      </div>`,
-    blogTitle: "Point of Sale Website at Biti's",
+    blogImageDescription: ``,
+    blogTitle: "2019 Year End Promotion at Biti's",
     content: [
-      // `This is the first project we start working on Biti's Company. This is a mobile application for customer `,
-      `Đây là dự án đầu tiên khi t bắt đầu làm việc tại Biti's. Sản phẩm là ứng dụng mobile dùng để tích điểm khi mua sản phẩm tại của hàng bán lẻ Bitis. 
-      Với mỗi hóa đơn mua sắm tại cửa hàng Biti’s, cửa hàng Biti’s Hunter và website Bitis.com.vn, 
-      bạn sẽ được tích lũy một số điểm tương ứng, có giá trị đổi lấy các ưu đãi và quà tặng hấp dẫn. <br>`
+      `
+      This project was built by the promotion plan come from business department.
+      Customer who buy and point saving in Biti's store can access the Promotion Website to spin the rotation 
+      and can be get lucky awards. 
+      `
     ],
     contentNext: [
-      `Team size tại thời điểm đó là 4 người bao gồm 1 lead, 1 design và 2 dev (backend + frontend).`,
-      `Team sử dụng thư viện Expressjs để thiết kế hệ thống backend, React Native cho nền tảng Mobile (android, ios).`
+      `Technical Language/Framework we use: <br>
+      - Design: Figma <br>
+      - Backend: Nodejs, Strapi, JWT, socket.io, MongoDb... <br>
+      - Frontend: Reactjs, Ant.design .. <br>
+      - System: Ubuntu, Nginx, Docker...
+      `
     ]
   },
   {
@@ -191,7 +198,6 @@ export const contentProjects = [
     path: "/my-projects/elocker",
     singleImage: require("../assets/elocker_main.svg"),
     pageBanner: require("../assets/elocker-image5.svg"),
-    blogThumb: require("../library/unfold-free-lite/assets/images/blog/bolg-detailes/bolg-detailes.jpg"),
     blogImages: [
       require("../assets/elocker-image1.svg"),
       require("../assets/elocker-image2.svg"),
@@ -199,19 +205,24 @@ export const contentProjects = [
       require("../assets/elocker-image4.jpeg"),
       require("../assets/elocker-image5.svg")
     ],
-    blogImageDescription: `<div style="display: flex; justify-content: center;">
-      <p>Chi tiết hơn tại <a href="https://bitis.com.vn/pages/bitis-loyalty">Homepage</a> chính thức của Biti's</p>
-      </div>`,
-    blogTitle: "Point of Sale Website at Biti's",
+    blogImageDescription: ``,
+    blogTitle: "Elocker",
     content: [
-      // `This is the first project we start working on Biti's Company. This is a mobile application for customer `,
-      `Đây là dự án đầu tiên khi t bắt đầu làm việc tại Biti's. Sản phẩm là ứng dụng mobile dùng để tích điểm khi mua sản phẩm tại của hàng bán lẻ Bitis. 
-      Với mỗi hóa đơn mua sắm tại cửa hàng Biti’s, cửa hàng Biti’s Hunter và website Bitis.com.vn, 
-      bạn sẽ được tích lũy một số điểm tương ứng, có giá trị đổi lấy các ưu đãi và quà tặng hấp dẫn. <br>`
+      `
+      Elocker is a startup company.
+    The business model was built in store personal belogings with ease, security. 
+    Customer can use our application in smartphone to check where the closest locker and make an reservation. 
+    The project can extend it's business model to logistic, delivery and travel.`
     ],
     contentNext: [
-      `Team size tại thời điểm đó là 4 người bao gồm 1 lead, 1 design và 2 dev (backend + frontend).`,
-      `Team sử dụng thư viện Expressjs để thiết kế hệ thống backend, React Native cho nền tảng Mobile (android, ios).`
+      `
+      Technical Language/Framework we use: <br>
+      - Design: Sketch, Zeplin. <br>
+      - Backend: Nodejs, expressjs, JWT, Mysql... <br>
+      - Frontend: React Native, shoutemUI .. <br>
+      - Embedded: PIC18, Bluetooth LE, Step Rotor Driver. <br>
+      - System: Ubuntu, Nginx... <br>
+      `
     ]
   }
 ];
@@ -241,15 +252,14 @@ export const resumeContent = {
       companyName: "Elocker",
       time: "Jul 2018 - Nov 2018",
       content: `I knowed and joined the startup project with my team -
-                the project's name is Elocker. The business model was
-                built in store personal belogings with ease, security.
-                Customer can use application in their smartphone to
-                check where the closest locker and make an reservation
-                item. We can extend the business model to apply to
-                logistic, delivery and travel. I took up mobile
-                developer position with that challenge. So, I develop
-                a application at a locker center, it's interact to
-                user and monitor the hardware control.`,
+      the project's name is Elocker. The business model was
+      built in store personal belogings with ease, security.
+      Customer can use application in their smartphone to
+      check where the closest locker and make an reservation
+      item. The project can extend it's business model to logistic, delivery and travel.
+      I took up mobile developer position with that challenge. So, I develop
+      a application at a locker center, it's interact to
+      user and monitor the hardware control.`,
       achievements: ``,
       techUsed: [
         "NodeJS",

@@ -82,8 +82,14 @@
                 </li>
               </ul>
 
-              <div class="pt-20" v-for="(item, index) in contentProject.content" v-bind:key="index">
-                <div v-html="item" />
+              <div class="pt-20 pb-20">
+                <div
+                  v-for="(item, index) in contentProject.content"
+                  v-bind:key="index"
+                  class="pt-2"
+                >
+                  <div v-html="item" />
+                </div>
               </div>
               <slider
                 animation="fade"
@@ -106,12 +112,14 @@
                 </slider-item>
               </slider>
               <div class="pt-10" v-html="contentProject.blogImageDescription" />
-              <div
-                class="pt-20"
-                v-for="(item, index) in contentProject.contentNext"
-                v-bind:key="index"
-              >
-                <div v-html="item" />
+              <div class="pt-20">
+                <div
+                  class="pt-2"
+                  v-for="(item, index) in contentProject.contentNext"
+                  v-bind:key="index"
+                >
+                  <div v-html="item" />
+                </div>
               </div>
             </div>
           </div>
