@@ -10,7 +10,7 @@
                 <h1
                   class="name mt-0 mb-1 text-white text-uppercase text-uppercase"
                 >Le Nguyen Anh Khoa</h1>
-                <div class="title mb-3">Full Stack Developer</div>
+                <div class="title mb-3">React Native Developer</div>
                 <ul class="list-unstyled">
                   <li class="mb-2">
                     <a href="mailto:lnanhkhoa303@gmail.com">
