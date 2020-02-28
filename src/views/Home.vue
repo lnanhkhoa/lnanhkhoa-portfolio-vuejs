@@ -318,6 +318,7 @@
                 </h4>
                 <div class="text-left">
                   <p>- Organize the logic of the system.</p>
+                  <p>- Mircoservices.</p>
                   <p>- Async handling.</p>
                   <p>
                     - Manage APIs resources base on
@@ -387,17 +388,14 @@
             <div class="single-service text-center mt-30">
               <div class="service-icon">
                 <!-- <i class="lni-support"></i> -->
-                <img
-                  src="../assets/linux-svgrepo-com.svg"
-                  v-bind:style="{color: '#00a78e'}"
-                />
+                <img src="../assets/linux-svgrepo-com.svg" v-bind:style="{color: '#00a78e'}" />
               </div>
               <div class="service-content">
                 <h4 class="service-title">
                   <a href="#">Linux Experience</a>
                 </h4>
                 <div class="text-left">
-                  <p> - Build and Deployment.</p>
+                  <p>- Build and Deployment.</p>
                 </div>
               </div>
             </div>
@@ -406,7 +404,7 @@
           <div class="col-lg-4 col-md-6 col-sm-8">
             <div class="single-service text-center mt-30">
               <div class="service-icon">
-                <i class='lni lni-git'></i>
+                <i class="lni lni-git"></i>
               </div>
               <div class="service-content">
                 <h4 class="service-title">
@@ -445,68 +443,27 @@
           <div class="col-lg-8">
             <div class="section-title text-center pb-25">
               <h2 class="title">My special projects</h2>
-              <!-- <p>Thời gian làm dev, t trải một vài dự án đáng giá.</p> -->
+              <!-- <p></p> -->
             </div>
             <!-- section title -->
           </div>
         </div>
         <!-- row -->
         <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-8 col-sm-9">
+          <div
+            class="col-lg-4 col-md-8 col-sm-9"
+            v-for="(item, index) in contentProjects"
+            :key="index"
+          >
             <div class="single-blog mt-30">
               <div class="blog-image">
-                <img src="../assets/loyalty_main.jpg" alt="Blog" />
+                <img v-bind:src="item.singleImage" v-bind:style="singleImageStyle" />
               </div>
               <div class="blog-content">
                 <h4 class="blog-title">
-                  <a href="/my-projects/loyalty" target="_blank">Loyalty Mobile Apps at Bitis</a>
+                  <a v-bind:href="item.path" target="_blank">{{item.title}}</a>
                 </h4>
-                <span>April, 2019</span>
-              </div>
-            </div>
-            <!-- single blog -->
-          </div>
-          <div class="col-lg-4 col-md-8 col-sm-9">
-            <div class="single-blog mt-30">
-              <div class="blog-image">
-                <img src="../library/unfold-free-lite/assets/images/blog/b-2.jpg" alt="Blog" />
-              </div>
-              <div class="blog-content">
-                <h4 class="blog-title">
-                  <a
-                    href="/my-projects/end-year-promotion"
-                    target="_blank"
-                  >End-year Promotion at Bitis</a>
-                </h4>
-                <span>December, 2019</span>
-              </div>
-            </div>
-            <!-- single blog -->
-          </div>
-          <div class="col-lg-4 col-md-8 col-sm-9">
-            <div class="single-blog mt-30">
-              <div class="blog-image">
-                <img src="../library/unfold-free-lite/assets/images/blog/b-3.jpg" alt="Blog" />
-              </div>
-              <div class="blog-content">
-                <h4 class="blog-title">
-                  <a href="/my-projects/elocker" target="_blank">Elocker App at Elocker Startup</a>
-                </h4>
-                <span>July 26, 2022</span>
-              </div>
-            </div>
-            <!-- single blog -->
-          </div>
-          <div class="col-lg-4 col-md-8 col-sm-9">
-            <div class="single-blog mt-30">
-              <div class="blog-image">
-                <img src="../library/unfold-free-lite/assets/images/blog/b-3.jpg" alt="Blog" />
-              </div>
-              <div class="blog-content">
-                <h4 class="blog-title">
-                  <a href="/my-projects/elocker" target="_blank">Elocker App at Elocker Startup</a>
-                </h4>
-                <span>July 26, 2022</span>
+                <span>{{item.startTime}}</span>
               </div>
             </div>
             <!-- single blog -->

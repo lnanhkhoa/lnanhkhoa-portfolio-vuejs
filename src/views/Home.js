@@ -1,7 +1,7 @@
 import Terminal from "../components/Terminal.vue";
 import RoadMap from "../components/RoadMap.vue";
 import _ from "lodash";
-import { COMMANDS, resumeFile} from "./data";
+import { COMMANDS, resumeFile, contentProjects } from "./data";
 export default {
   name: "Home",
   components: {
@@ -10,10 +10,15 @@ export default {
   },
   data() {
     return {
+      singleImageStyle: {
+        height: "360px",
+        width: "360px"
+      },
       COMMANDS: COMMANDS,
+      contentProjects,
       resumeFile,
       itemActived: "home",
-      refNames: ["home", "about", "skills", "experience", 'projects'],
+      refNames: ["home", "about", "skills", "experience", "projects"],
       items: [
         {
           name: "Home",
@@ -75,6 +80,6 @@ export default {
       } else {
         this.itemActived = "home";
       }
-    },
+    }
   }
 };

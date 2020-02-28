@@ -52,64 +52,194 @@ export const COMMANDS = {
     `
 };
 
-export const contentProjects = {
-  loyalty: {
-    pageBanner: require("../assets/page-banner.jpg"),
+export const contentProjects = [
+  {
+    id: 1,
+    type: "loyalty",
+    name: "Biti's Loyalty Mobile App",
+    title: "Loyalty Mobile App at Biti's",
+    startTime: "April 2019",
+    createdAt: "25 Feb, 2020",
+    path: "/my-projects/loyalty",
+    singleImage: require("../assets/loyalty_main.svg"),
+    pageBanner: require("../assets/loyalty-overview.svg"),
     blogThumb: require("../library/unfold-free-lite/assets/images/blog/bolg-detailes/bolg-detailes.jpg"),
-    blogTitle: "Nobody Knows What’s Gonna Happen & Make something",
-    createdAt: "25 June, 2020",
+    blogImages: [
+      require("../assets/loyalty-image1.svg"),
+      require("../assets/loyalty-image2.svg"),
+      require("../assets/loyalty-image3.svg"),
+      require("../assets/loyalty-image4.svg")
+    ],
+    blogImageDescription: `<div style="display: flex; justify-content: center;">
+      <p>Chi tiết hơn tại <a href="https://bitis.com.vn/pages/bitis-loyalty">Homepage</a> chính thức của Biti's</p>
+      </div>`,
+    blogTitle: "Loyalty Mobile App at Biti's",
     content: [
-      `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enlquis nostrud
-          exercitation ullam lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          <br />
-          <br />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing
-          elit.`,
-      `<blockquote class="blockquote">
-            <p>
-              <img
-                class="quote-left"
-                src="${require("../library/unfold-free-lite/assets/images/blog/bolg-detailes/quote-left.png")}"
-                alt="quote"
-              />
-              Lorem ipsum
-              dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim.
-              <img
-                class="quote-right"
-                src="${require("../library/unfold-free-lite/assets/images/blog/bolg-detailes/quote-right.png")}"
-                alt
-              />
-            </p>
-          </blockquote>`,
-      `<p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </p>`
+      // `This is the first project we start working on Biti's Company. This is a mobile application for customer `,
+      `Đây là dự án đầu tiên khi t bắt đầu làm việc tại Biti's. Sản phẩm là ứng dụng mobile dùng để tích điểm khi mua sản phẩm tại của hàng bán lẻ Bitis. 
+      Với mỗi hóa đơn mua sắm tại cửa hàng Biti’s, cửa hàng Biti’s Hunter và website Bitis.com.vn, 
+      bạn sẽ được tích lũy một số điểm tương ứng, có giá trị đổi lấy các ưu đãi và quà tặng hấp dẫn. <br>`
+    ],
+    contentNext: [
+      `Team size tại thời điểm đó là 4 người bao gồm 1 lead, 1 design và 2 dev (backend + frontend).`,
+      `Team sử dụng thư viện Expressjs để thiết kế hệ thống backend, React Native cho nền tảng Mobile (android, ios).`
+    ]
+  },
+  {
+    id: 2,
+    type: "bitopia",
+    name: "Bitopia Mobile Application",
+    title: "Bitopia Mobile Application at Biti's",
+    startTime: "Nov 2019",
+    createdAt: "25 Feb, 2020",
+    path: "/my-projects/bitopia",
+    singleImage: require("../assets/bitopia_main.svg"),
+    pageBanner: require("../assets/bitopia-overview.svg"),
+    blogThumb: require("../library/unfold-free-lite/assets/images/blog/bolg-detailes/bolg-detailes.jpg"),
+    blogImages: [
+      require("../assets/bitopia-image1.svg"),
+      require("../assets/bitopia-image2.svg"),
+      require("../assets/bitopia-image3.svg")
+    ],
+    blogImageDescription: `<div style="display: flex; justify-content: center;">
+      <p>Chi tiết hơn tại <a href="https://bitis.com.vn/pages/bitis-loyalty">Homepage</a> chính thức của Biti's</p>
+      </div>`,
+    blogTitle: "Bitopia Mobile Application at Biti's",
+    content: [
+      // `This is the first project we start working on Biti's Company. This is a mobile application for customer `,
+      `Đây là dự án đầu tiên khi t bắt đầu làm việc tại Biti's. Sản phẩm là ứng dụng mobile dùng để tích điểm khi mua sản phẩm tại của hàng bán lẻ Bitis. 
+      Với mỗi hóa đơn mua sắm tại cửa hàng Biti’s, cửa hàng Biti’s Hunter và website Bitis.com.vn, 
+      bạn sẽ được tích lũy một số điểm tương ứng, có giá trị đổi lấy các ưu đãi và quà tặng hấp dẫn. <br>`
+    ],
+    contentNext: [
+      `Team size tại thời điểm đó là 4 người bao gồm 1 lead, 1 design và 2 dev (backend + frontend).`,
+      `Team sử dụng thư viện Expressjs để thiết kế hệ thống backend, React Native cho nền tảng Mobile (android, ios).`
+    ]
+  },
+  {
+    id: 3,
+    type: "pos",
+    name: "Point of Sale Website",
+    title: "Point of Sale Website at Biti's",
+    startTime: "Jan 2020",
+    createdAt: "25 Feb, 2020",
+    path: "/my-projects/pos",
+    singleImage: require("../assets/pos_main.svg"),
+    pageBanner: require("../assets/pos-overview.svg"),
+    blogThumb: require("../library/unfold-free-lite/assets/images/blog/bolg-detailes/bolg-detailes.jpg"),
+    blogImages: [
+      require("../assets/pos-image1.svg"),
+      require("../assets/pos-image2.svg"),
+      require("../assets/pos-image3.svg"),
+      require("../assets/pos-image4.svg"),
+      require("../assets/pos-image5.svg"),
+    ],
+    blogImageDescription: `<div style="display: flex; justify-content: center;">
+      <p>Chi tiết hơn tại <a href="https://bitis.com.vn/pages/bitis-loyalty">Homepage</a> chính thức của Biti's</p>
+      </div>`,
+    blogTitle: "Point of Sale Website at Biti's",
+    content: [
+      // `This is the first project we start working on Biti's Company. This is a mobile application for customer `,
+      `Đây là dự án đầu tiên khi t bắt đầu làm việc tại Biti's. Sản phẩm là ứng dụng mobile dùng để tích điểm khi mua sản phẩm tại của hàng bán lẻ Bitis. 
+      Với mỗi hóa đơn mua sắm tại cửa hàng Biti’s, cửa hàng Biti’s Hunter và website Bitis.com.vn, 
+      bạn sẽ được tích lũy một số điểm tương ứng, có giá trị đổi lấy các ưu đãi và quà tặng hấp dẫn. <br>`
+    ],
+    contentNext: [
+      `Team size tại thời điểm đó là 4 người bao gồm 1 lead, 1 design và 2 dev (backend + frontend).`,
+      `Team sử dụng thư viện Expressjs để thiết kế hệ thống backend, React Native cho nền tảng Mobile (android, ios).`
+    ]
+  },
+  {
+    id: 4,
+    type: "promotion",
+    name: "Year End Promotion 2019",
+    title: "Biti's Year End Promotion 2019",
+    startTime: "Nov 2019",
+    createdAt: "25 Feb, 2020",
+    path: "/my-projects/promotion",
+    singleImage: require("../assets/promotion_main.svg"),
+    pageBanner: require("../assets/pos-overview.png"),
+    blogThumb: require("../library/unfold-free-lite/assets/images/blog/bolg-detailes/bolg-detailes.jpg"),
+    blogImages: [
+      "https://file.hstatic.net/1000230642/file/5ecc1ba29df264ac3de3_187fbd16711c4613a8a6a76c87afbaf6_grande.jpg",
+      "https://file.hstatic.net/1000230642/file/dfff0dca3284cbda9295_8680bc72c3224a769ca3d5dc4a79e763_grande.jpg",
+      "https://file.hstatic.net/1000230642/file/9e4a8460bb2e42701b3f_f9b4fe3f1a3448be99513b12a3336bfc_grande.jpg",
+      "https://i.ytimg.com/vi/e2jC_9xuXwU/maxresdefault.jpg"
+    ],
+    blogImageDescription: `<div style="display: flex; justify-content: center;">
+      <p>Chi tiết hơn tại <a href="https://bitis.com.vn/pages/bitis-loyalty">Homepage</a> chính thức của Biti's</p>
+      </div>`,
+    blogTitle: "Point of Sale Website at Biti's",
+    content: [
+      // `This is the first project we start working on Biti's Company. This is a mobile application for customer `,
+      `Đây là dự án đầu tiên khi t bắt đầu làm việc tại Biti's. Sản phẩm là ứng dụng mobile dùng để tích điểm khi mua sản phẩm tại của hàng bán lẻ Bitis. 
+      Với mỗi hóa đơn mua sắm tại cửa hàng Biti’s, cửa hàng Biti’s Hunter và website Bitis.com.vn, 
+      bạn sẽ được tích lũy một số điểm tương ứng, có giá trị đổi lấy các ưu đãi và quà tặng hấp dẫn. <br>`
+    ],
+    contentNext: [
+      `Team size tại thời điểm đó là 4 người bao gồm 1 lead, 1 design và 2 dev (backend + frontend).`,
+      `Team sử dụng thư viện Expressjs để thiết kế hệ thống backend, React Native cho nền tảng Mobile (android, ios).`
+    ]
+  },
+  {
+    id: 5,
+    type: "elocker",
+    name: "Elocker",
+    title: "Elocker",
+    startTime: "Jul 2018",
+    createdAt: "25 Feb, 2020",
+    path: "/my-projects/elocker",
+    singleImage: require("../assets/elocker_main.svg"),
+    pageBanner: require("../assets/elocker-image5.svg"),
+    blogThumb: require("../library/unfold-free-lite/assets/images/blog/bolg-detailes/bolg-detailes.jpg"),
+    blogImages: [
+      require("../assets/elocker-image1.svg"),
+      require("../assets/elocker-image2.svg"),
+      require("../assets/elocker-image3.svg"),
+      require("../assets/elocker-image4.jpeg"),
+      require("../assets/elocker-image5.svg")
+    ],
+    blogImageDescription: `<div style="display: flex; justify-content: center;">
+      <p>Chi tiết hơn tại <a href="https://bitis.com.vn/pages/bitis-loyalty">Homepage</a> chính thức của Biti's</p>
+      </div>`,
+    blogTitle: "Point of Sale Website at Biti's",
+    content: [
+      // `This is the first project we start working on Biti's Company. This is a mobile application for customer `,
+      `Đây là dự án đầu tiên khi t bắt đầu làm việc tại Biti's. Sản phẩm là ứng dụng mobile dùng để tích điểm khi mua sản phẩm tại của hàng bán lẻ Bitis. 
+      Với mỗi hóa đơn mua sắm tại cửa hàng Biti’s, cửa hàng Biti’s Hunter và website Bitis.com.vn, 
+      bạn sẽ được tích lũy một số điểm tương ứng, có giá trị đổi lấy các ưu đãi và quà tặng hấp dẫn. <br>`
+    ],
+    contentNext: [
+      `Team size tại thời điểm đó là 4 người bao gồm 1 lead, 1 design và 2 dev (backend + frontend).`,
+      `Team sử dụng thư viện Expressjs để thiết kế hệ thống backend, React Native cho nền tảng Mobile (android, ios).`
     ]
   }
-};
-
-
+];
 
 export const resumeContent = {
   experience: [
     {
-      title: 'Fullstack Developer',
+      title: "Fullstack Developer",
       companyName: "Biti's",
-      time: "Nov 2018 - Present", 
-      content: "The company's business is manufacture shoes and retail. And I work as a fullstack developer at IT department in Biti's Company. There are many projects that I have joined, such as Biti's Loyalty Mobile App, Biti's Staff App, Point of Sale and Promotion plans. My team are migrating monolithic to microservices systems. I was nominated as Leader in my team, so that I have to make a lot of efforts.",
-      achievements:``,
-      techUsed: ['NodeJS', 'Strapi.io', 'Mysql', 'Mongo', 'React', 'Redux','Saga', 'Ant Design']
-      
+      time: "Nov 2018 - Present",
+      content:
+        "The company's business is manufacture shoes and retail. And I work as a fullstack developer at IT department in Biti's Company. There are many projects that I have joined, such as Biti's Loyalty Mobile App, Biti's Staff App, Point of Sale and Promotion plans. My team are migrating monolithic to microservices systems. I was nominated as Leader in my team, so that I have to make a lot of efforts.",
+      achievements: ``,
+      techUsed: [
+        "NodeJS",
+        "Strapi.io",
+        "Mysql",
+        "Mongo",
+        "React",
+        "Redux",
+        "Saga",
+        "Ant Design"
+      ]
     },
-     {
-      title: 'React Native Developer',
+    {
+      title: "React Native Developer",
       companyName: "Elocker",
-      time: "Jul 2018 - Nov 2018", 
+      time: "Jul 2018 - Nov 2018",
       content: `I knowed and joined the startup project with my team -
                 the project's name is Elocker. The business model was
                 built in store personal belogings with ease, security.
@@ -120,26 +250,30 @@ export const resumeContent = {
                 developer position with that challenge. So, I develop
                 a application at a locker center, it's interact to
                 user and monitor the hardware control.`,
-      achievements:``,
-      techUsed: ['NodeJS', 'Strapi.io', 'Mysql', 'Mongo', 'React', 'Redux','Saga', 'Ant Design']
-      
+      achievements: ``,
+      techUsed: [
+        "NodeJS",
+        "Strapi.io",
+        "Mysql",
+        "Mongo",
+        "React",
+        "Redux",
+        "Saga",
+        "Ant Design"
+      ]
     },
-     {
-      title: 'Embedded Software Engineer',
+    {
+      title: "Embedded Software Engineer",
       companyName: "Memstech JSC",
-      time: "Jan 2017 - Nov 2018", 
+      time: "Jan 2017 - Nov 2018",
       content: `Since the graduation date at HCM University of Technology, I took part in Memstech JSC - at District 9, HCMC. In company, my role is embedded software engineer. All projects are aim at Agriculture System. Every day, I programing to monitor MCU in order to read Sensor, control devices and communicate server.`,
-      achievements:``,
-      techUsed: ['Python', 'C++', 'Mongo','React Native']
-      
+      achievements: ``,
+      techUsed: ["Python", "C++", "Mongo", "React Native"]
     }
   ]
-}
+};
 
-export const resumeFile = require('../assets/cv-lnanhkhoa.pdf'); 
-
-
-
+export const resumeFile = require("../assets/cv-lnanhkhoa.pdf");
 
 // Kể từ ngày tốt nghiệp BK, t apply vào Memstech JSC. Tại đây t theo nghiệp làm nhúng, vai trò là kĩ sư lập trình phần mềm cho mạch nhúng.
 // Vì công ty mới thành lập và còn non trẻ, các dự án IOT ở đây xoay quanh lĩnh vực nông nghiệp và cây trồng. Hằng ngày t lập trình điều khiển MCU để đọc cảm biến và
