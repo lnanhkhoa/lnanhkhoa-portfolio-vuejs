@@ -1,18 +1,18 @@
 export const COMMANDS = {
   help: `Supported commands: 
+    <span class="code">profile</span>,
+    <span class="code">lnanhkhoa</span>,
     <span class="code">about</span>,
     <span class="code">skills</span>,
     <span class="code">education</span>,
     <span class="code">experience</span>,
     <span class="code">projects</span>,
-    <span class="code">profile</span>,
-    <span class="code">resume</span>,
-    <span class="code">lnanhkhoa</span>.
+    <span class="code">resume</span>.
       `,
   profile: '<a href="/profile" target="_blank" class="code">My Profiles</a>',
   lnanhkhoa: "👋 Hi 😏! My fullname is Le Nguyen Anh Khoa.",
   about: `
-     I’m a Software Developer. 
+     I’m Khoa Le, a Software Developer. 
     <br>
      I am interested in full-stack/backend developer and seeking 
      to pursue a successful career path in software development.
@@ -25,9 +25,7 @@ export const COMMANDS = {
       <br>
       GPA: 7.13
   `,
-  resume: `
-        <a href='/resume' class='success link' target="_blank">My Resume</a> 
-  `,
+  resume: `<a href='/resume' class='success link' target="_blank">My Resume</a>`,
   experience: `<strong class="header-name">Biti's (Nov 2018 - March. 2020)</strong>
     <br>
     <i>Full-Stack Developer</i>
@@ -46,9 +44,13 @@ export const COMMANDS = {
   projects: `
     <a href='/my-project/loyalty' class='success link' target="_blank">Biti's Loyalty App - Mobile </a>
     <br>
-    <a href='/my-project/loyalty' class='success link' target="_blank">Biti's Loyalty App - Mobile </a>
+    <a href='/my-project/bitopia' class='success link' target="_blank">Bitopia Mobile Application - Mobile</a>
     <br>
-    <a href='/my-project/loyalty' class='success link' target="_blank">Biti's Loyalty App - Mobile </a>
+    <a href='/my-project/pos' class='success link' target="_blank">Point of Sale Website </a>
+    <br>
+    <a href='/my-project/promotion' class='success link' target="_blank">2019 Year End Promotion </a>
+    <br>
+    <a href='/my-project/elocker' class='success link' target="_blank">Elocker </a>
     `
 };
 
@@ -110,7 +112,7 @@ export const contentProjects = [
       `Bitopia is the application for Biti's staff. A staff in a store use the application to get daily attendance and interface to Point of Sale.
       He/she can see the stocks in warehouse store , take a order item into a bill and send it to PoS. 
       And additional feature are manger can tracking performance staff, show up revenue store...
-      <br>`,
+      <br>`
     ],
     contentNext: [
       `Technical Language/Framework we use: <br>
