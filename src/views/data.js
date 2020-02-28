@@ -212,7 +212,7 @@ export const contentProjects = [
     content: [
       `
       Elocker is a startup company.
-    The business model was built in store personal belogings with ease, security. 
+    The business model was built in store personal belongings with ease, security. 
     Customer can use our application in smartphone to check where the closest locker and make an reservation. 
     The project can extend it's business model to logistic, delivery and travel.`
     ],
@@ -255,7 +255,7 @@ export const resumeContent = {
       time: "Jul 2018 - Nov 2018",
       content: `I knowed and joined the startup project with my team -
       the project's name is Elocker. The business model was
-      built in store personal belogings with ease, security.
+      built in store personal belongings with ease, security.
       Customer can use application in their smartphone to
       check where the closest locker and make an reservation
       item. The project can extend it's business model to logistic, delivery and travel.
